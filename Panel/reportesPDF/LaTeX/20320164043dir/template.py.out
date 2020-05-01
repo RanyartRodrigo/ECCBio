@@ -1,0 +1,266 @@
+\pagebreak
+\section{Área de Protección de Flora y Fauna
+ Valle de los Cirios
+}
+\subsection{Clima al presente}
+\begin{table}[H]
+\begin{tabular}{crc}
+\multirow{3}{*}{\includegraphics[height=1.15cm]{./logos/icon-thermometer.png}} & media &  \input{infoMedia1.txt} $^{\circ}$C\\
+                & maxima & \input{infoMax1.txt} $^{\circ}$C \\
+                & minima & \input{infoMin1.txt} $^{\circ}$C \\
+\includegraphics[height=0.8cm]{./logos/icon-drop.png}&   \input{infoPrec1.txt} mm     & 
+\end{tabular}
+\end{table}
+\subsection{Clima a futuro}
+\begin{table}[H]
+\begin{tabular}{c}
+\multirow{3}{*}{\includegraphics[height=1.15cm]{./logos/climafuturo.png}}
+\end{tabular}
+\end{table}
+Se refiere al grado en el que las variaciones clim\'aticas afectan a los ecosistemas; una mayor exposici\'on podr\'ia incrementar la vulnerabilidad de los mismos. Para el \'area de inter\'es (\'area protegida, estado, municipio o pol\'igono) se reporta la proporci\'on de superficie en la que coinciden los cuatro modelos de circulaci\'on global (MCG): MPI-ESM-LR (Alemania), GFDL-CM3 (Estados Unidos), HADGEM2-ES (Reino Unido) y CNRMCM5 (Francia). Se presentan dos gr\'aficas que son complementarias; La gr\'afica circular corresponde a la proporci\'on de la superficie que se estima permanecer\'a con condiciones clim\'aticas estables, lo que fue identificado a partir de la delimitaci\'on de las zonas de vida de Holdridge, utilizando variables bioclim\'aticas (biotemperatura, precipitaci\'on y el potencial de evapotranspiraci\'on) para el segundo periodo hist\'orico (1980 a 2009; \cite{Cuervo191}) y los tres horizontes futuros bajo los cuatro MCG con escenarios de emisiones RCP 4.5 y 8.5 (moderado y muy alto, respectivamente). La gr\'afica de barras muestra la proporci\'on de la superficie del \'area de inter\'es que potencialmente presentar\'a un incremento significativo y constante de la temperatura media, considerando del periodo m\'as antiguo (1950-1979; \cite{Cuervo19}) al periodo futuro m\'as lejano (2075-2099) con base en los escenarios de cambio clim\'atico \cite{Fernandez15}. Las \'areas que no cambian respecto a sus zonas de vida son consideradas estables. Note que cuando elige un periodo futuro m\'as alejado o un escenario de emisiones m\'as alto, el porcentaje de \'area disminuye.
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1E}
+\caption{Proporci\'on de la superficie del \'area de inter\'es que mantiene las condiciones clim\'aticas (zonas de vida estables) para el periodo.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1Mann}
+\caption{Proporci\'on de la superficie terrestre del \'area de inter\'es con incremento constante de la temperatura media (rojo).}
+\end{figure}
+\begin{table}[H]
+\caption{Cambios proyectados respecto al promedio hist\'orico: intervalo de variaci\'on entre los cuatro modelos de circulaci\'on global}
+\begin{tabular}{cccc}
+&Periodo& RCP 4.5 & RCP 8.5 \\
+\multirow{6}{*}{\textcolor{brown}{Temperatura m\'inima ($^{\circ}$C)}} & \multirow{2}{*}{2015-2039} & \multirow{2}{*}{
+(1.04
+ , 1.21)
+}  & \multirow{2}{*}{(1.03
+ , 1.34)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2045-2069} & \multirow{2}{*}{(1.75
+ , 2.15)}  & \multirow{2}{*}{
+(2.14 , 
+3.31)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2075-2099} & \multirow{2}{*}{(1.84
+ , 2.92)}
+ & \multirow{2}{*}{(3.56
+ , 5.55)} \\
+ & & & \\
+\multirow{6}{*}{\textcolor{orange}{Temperatura media ($^{\circ}$C)}} & \multirow{2}{*}{2015-2039} & \multirow{2}{*}{(1.37
+ , 2.17)
+}  & \multirow{2}{*}{(1.38
+ , 2.25)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2045-2069} & \multirow{2}{*}{(2.04
+ , 3.34)}  & \multirow{2}{*}{
+(2.58 , 
+3.94)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2075-2099} & \multirow{2}{*}{(2.57
+ , 3.72)}
+ & \multirow{2}{*}{(4.06
+ , 5.82)} \\
+ & & & \\
+\multirow{6}{*}{\textcolor{red2}{Temperatura m\'axima ($^{\circ}$C)}} & \multirow{2}{*}{2015-2039} & \multirow{2}{*}{(0.83
+ , 2.01)
+}  & \multirow{2}{*}{(0.87
+ , 3.2)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2045-2069} & \multirow{2}{*}{(1.56
+ , 4.6)}  & \multirow{2}{*}{
+(2.04 , 
+5.39)}   \\
+ & & & \\
+                                    & \multirow{2}{*}{2075-2099} & \multirow{2}{*}{(1.69
+ , 5.05)}
+ & \multirow{2}{*}{(3.13
+ , 8.06)} \\
+ & & & \\
+\multirow{6}{*}{\textcolor{blue}{Precipitaci\'on total (mm) }\textcolor{grey}{(o/o)}} & \multirow{2}{*}{2015-2039} & (-8.75
+ , 10.25)
+   & (-19.4
+ , 56.11)   \\
+                                    &                            & \textcolor{grey}{(-7}
+ , \textcolor{grey}{9)}
+   & \textcolor{grey}{(-16}
+ , \textcolor{grey}{47)}   \\
+                                    & \multirow{2}{*}{2045-2069} & (-3.71
+ , 37.76)  & 
+(-0.71 , 
+33.16) \\
+                                    &                            & \textcolor{grey}{(-3}
+ , 
+\textcolor{grey}{32)} & 
+\textcolor{grey}{(-1} , 
+\textcolor{grey}{28)} \\
+                                    & \multirow{2}{*}{2075-2099} & (-12.21
+ , 20.11) & 
+(-3.7 , 
+59.43) \\
+                                    &                            & \textcolor{grey}{(-10}
+ , \textcolor{grey}{17)} & 
+\textcolor{grey}{(-3} , 
+\textcolor{grey}{50)}
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\caption{Temperaturas mínimas 
+anuales para los periodos hist\'oricos y los cuatro modelos de circulaci\'on global}
+\begin{tabular}{lcccccc}
+\cline{2-7}
+&\multicolumn{6}{c}{\textbf{Modelos}} \\ \hline
+& Historico & CNRMCM5 & MPI\_ESM\_LR &  HADGEM2\_ES & GFDL\_CM3 & Promedio* \\ \hline
+1950-1979 & 6.44 & - & - & - & - & -\\
+1980-2009 & 6.83 & -  & -  & -  & -  & -\\
+2015-2039 (RCP 4.5) & -  & 7.87 
+& 8.04 
+& 7.99 
+& 7.93 
+& 7.96 \\
+2015-2039 (RCP 8.5) & -  & 7.86 
+& 8.06 
+& 7.89 
+& 8.17 
+& 7.99 \\
+2045-2069 (RCP 4.5) & -  & 8.63 
+& 8.6 
+& 8.98 
+& 8.58 
+& 8.7 \\
+2045-2069 (RCP 8.5) & -  & 8.97 
+& 9.34 
+& 10.14 
+& 9.2 
+& 9.41 \\
+2075-2099 (RCP 4.5) & -  & 8.96 
+& 9.01 
+& 9.75 
+& 8.67 
+& 9.1 \\
+2075-2099 (RCP 8.5) & -  & 10.45 
+& 10.77 
+& 12.38 
+& 10.39 
+& 11 \\ \hline
+& \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1N}
+\caption{Valores promedio de en el \'area de inter\'es para la  Temperatura mínima
+ en el periodo Anual}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1}
+\caption{Dispersi\'on de la Temperatura mínima
+ para el periodo Anual
+ con el modelo CNRMCM5
+ y RCP 4.5}
+\end{figure}
+\begin{center}
+\begin{table}[H]
+\caption{Mediana, valor m\'inimo y valor m\'aximo para la Temperatura mínima 
+en el periodo Anual 
+para el modelo CNRMCM5 
+con forzamiento 4.5}
+\begin{tabular}{cccc}
+\hline
+          & Mediana & Valor m\'inimo & Valor m\'aximo \\ \hline
+1950-1979 & 6.71875     &
+ 2.71875 & 
+ 8.5625          \\
+1980-2009 & 7.03125     &
+ 3.78125 & 
+ 8.71875          \\
+2015-2039 & 8.0625     &
+ 4.8125 & 
+ 9.625          \\
+2045-2069 & 8.8125     &
+ 5.59375 & 
+ 10.46875          \\
+2075-2099 & 9.25     &
+ 5.6875 & 
+ 11.125          \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
+\subsection{Conectividad}
+\begin{table}[H]
+\begin{tabular}{c}
+\multirow{3}{*}{\includegraphics[height=1.15cm]{./logos/conectividad.png}}
+\end{tabular}
+\end{table}
+\subsubsection{\'Indice de Fragmentaci\'on}
+El \'indice de fragmentaci\'on mide el grado de fragmentaci\'on de la vegetaci\'on primaria y secundaria arb\'orea y considera el impacto generado por el cambio de uso del suelo. La fragmentaci\'on se expresa en porcentaje y su valor ser\'a mayor si existen m\'as barreras como carreteras, \'areas urbanas o tierras agr\'icolas, que puedan dificultar el movimiento de organismos entre fragmentos de vegetaci\'on (\cite{Moser07}).
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm,height=4cm]{./logos/fragmentacionClip.png}
+\caption{\'Indice de fragmentaci\'on (\%)}
+\end{figure}
+El \'indice se calcul\'o para los pol\'igonos de cada una de las \'areas protegidas y para sus zonas de influencia de hasta 10 km (dependiendo de su l\'imite con las costas). La figura inicial sirve para ejemplificar como se ve un paisaje con un valor bajo o alto del \'indice de fragmentaci\'on. As\'i, por ejemplo, si algún \'area protegida tiene un valor del \'indice igual a 0\%, su vegetaci\'on no estar\'ia fragmentada (i.e. se trata de un solo pol\'igono), mientras que un \'area protegida con un valor superior a 90\% indica un gran n\'umero de fragmentos de vegetaci\'on, pequeños y distantes entre s\'i, producto principalmente del cambio de uso del suelo.
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1F}
+\caption{Porcentaje de framentaci\'on de la vegetaci\'on en el \'area protegida}
+\end{figure}
+\subsubsection{An\'alisis de tendencia temporal de conectividad de la vegetaci\'on}
+El an\'alisis de tendencias temporales brinda una estimaci\'on sobre los cambios en la conectividad de los fragmentos de vegetaci\'on por cambio clim\'atico. Se us\'o el \'indice conexo equivalente que incorpora la distancia entre cada par de fragmentos de vegetaci\'on primaria y un atributo que describe su calidad (\cite{Saura11, Saura17}). El \'indice se calcul\'o para los fragmentos de vegetaci\'on primaria de la carta de uso del suelo y vegetaci\'on serie VI (\cite{Inegi2013, Inegi2016}) presentes en las \'areas protegidas y sus zonas de influencia de hasta 10 km (dependiendo de su cercanía a la costa). El atributo de calidad de cada fragmento corresponde a su \'area multiplicada por su grado de estabilidad clim\'atica en tres periodos futuros (2015-2039, 2045-2069 y 2075-2099) para dos escenarios de trayectorias de concentraciones representativas (RCP 4.5 y 8.5). Las distancias entre fragmentos de vegetaci\'on corresponden a las rutas con menor impacto humano; se estimaron usando un \'indice de impacto humano que incorpora tres de los factores de presi\'on antropog\'enicos m\'as importantes: cambio de uso del suelo, desarrollo de infraestructura y fragmentaci\'on de h\'abitats (v\'ease la informaci\'on en el m\'odulo de conectividad del panel izquierdo). La conectividad se expresa en porcentaje y su valor ser\'a mayor en el \'area protegida y su zona de influencia si tiene m\'as fragmentos en donde la mayor parte de su \'area es estable clim\'aticamente y si la distancia entre sus fragmentos es menor a la establecida como la distancia m\'axima de dispersi\'on. El an\'alisis de tendencias de la conectividad en el \'area protegida y su zona de influencia se puede visualizar bajo cuatro distancias que se relacionan con la capacidad de dispersi\'on diferenciada de varios grupos taxon\'omicos como anfibios, reptiles, aves y grandes mam\'iferos (2, 10, 30 y 100 km).
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1T}
+\caption{Tendencia temporal de conectividad de la vegetaci\'on en el \'area protegida ante el cambio clim\'atico}
+\end{figure}
+\subsubsection{Conectividad y cobertura de las \'areas protegidas en las ecorregiones terrestres}
+El \'indice ProtConn fue dise\~nado para evaluar metas de conservaci\'on tales como la meta 11 de Aichi y cuantifica la conectividad de la red de \'areas protegidas. El \'indice incorpora la superficie y distancia entre las \'areas protegidas. Las distancias entre las \'areas protegidas corresponden a las rutas con menor impacto humano. Las distancias se estimaron usando un \'indice de impacto humano que incorpora tres de los factores de presi\'on antropog\'enicos m\'as importantes: cambio de uso del suelo, desarrollo de infraestructura y fragmentaci\'on de h\'abitats (v\'ease la informaci\'on en el m\'odulo de conectividad del panel izquierdo). El \'indice ProtConn se compone de tres valores que representan una proporci\'on respecto al \'area total de la ecorregi\'on: 1) porcentaje de la ecorregi\'on que no est\'a protegida, ii) porcentaje de la ecorregi\'on que est\'a protegida y iii) porcentaje de la ecorregi\'on que est\'a protegida y conectada. El \'indice ProtConn se calcul\'o para la red de \'areas protegidas de jurisdicci\'on federal (\cite{Semarnat17}) y se puede visualizar para tres de los niveles de las ecorregiones terrestres bajo cuatro distancias que se relacionan con la capacidad de dispersi\'on diferenciada de varios grupos taxon\'omicos como anfibios, reptiles, aves y grandes mam\'iferos (2, 10, 30 y 100 km, Tabla 4).
+\begin{figure}[H]
+\centering
+\includegraphics[trim= 0 0 0 80, clip, width=11cm,height=10cm]{./1P}
+\caption{El grado de conectividad de la ecorregi\'on Nivel I 
+ con distancia 2 Km 
+ en la cual est\'a contenida el ANP}
+\end{figure}
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{cp{4cm}p{4cm}p{4cm}}
+ & \multicolumn{3}{c}{Ecoregi\'on}                             \\ \cline{2-4}
+ & \emph{Nivel I} & \emph{Nivel II} & \emph{Nivel III} \\ \cline{2-4}
+\begin{tabular}[c]{@{}c@{}}Distancia de\\  dispersi\'on (km)\end{tabular} & Desiertos de América del Norte 
+ & Desiertos Cálidos 
+ & Desierto de Baja California 
+ \\ \hline
+2  & 8.85
+\%              &
+ 8.85
+\%               &
+ 49.87
+\%                \\
+10  & 8.85
+\%              &
+ 8.85
+\%               &
+ 49.87
+\%                \\
+30  & 8.85
+\%              &
+ 8.85
+\%               &
+ 49.87
+\%                \\
+100  & 9.01
+\%              &
+ 9.01
+\%               &
+ 49.88
+\%                \\ \hline
+\end{tabular}
+\caption{Valores del indicador ProtConn (porcentaje de la ecoregi\'on protegida y conectada) en funci\'on de la distancia de dispersi\'on para los diferentes niveles de agregaci\'on de las ecorregiones terrestres en las que se ubica el \'area protegida 
+Área de Protección de Flora y Fauna
+ Valle de los Cirios
+ }
+\end{table}
+\end{center}
+\newpage

@@ -1,0 +1,455 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2018.4.2)  3 APR 2018 04:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tools.ins
+(./tools.ins
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count79
+\emptyLines=\count80
+\processedLines=\count81
+\commentsRemoved=\count82
+\commentsPassed=\count83
+\codeLinesPassed=\count84
+\TotalprocessedLines=\count85
+\TotalcommentsRemoved=\count86
+\TotalcommentsPassed=\count87
+\TotalcodeLinesPassed=\count88
+\NumberOfFiles=\count89
+\inFile=\read1
+\inputcheck=\read2
+\off@0=\count90
+\off@1=\count91
+\off@2=\count92
+\off@3=\count93
+\off@4=\count94
+\off@5=\count95
+\off@6=\count96
+\off@7=\count97
+\off@8=\count98
+\off@9=\count99
+\off@10=\count100
+\off@11=\count101
+\off@12=\count102
+\off@13=\count103
+\off@14=\count104
+\off@15=\count105
+\@maxfiles=\count106
+\@maxoutfiles=\count107
+
+Utility: `docstrip' 2.5d <2005/07/29>
+English documentation    <1999/03/31>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) ./array.sty 
+\openout0 = `./array.sty'.
+
+
+Processing file array.dtx (package,ncols) -> array.sty
+File array.dtx ended by \endinput.
+Lines  processed: 2815
+Comments removed: 2467
+Comments  passed: 3
+Codelines passed: 335
+
+
+Generating file(s) ./delarray.sty 
+\openout0 = `./delarray.sty'.
+
+
+Processing file delarray.dtx (package) -> delarray.sty
+File delarray.dtx ended by \endinput.
+Lines  processed: 205
+Comments removed: 167
+Comments  passed: 1
+Codelines passed: 30
+
+(./tabularx.ins
+
+Generating file(s) ./tabularx.sty 
+\openout0 = `./tabularx.sty'.
+
+
+Processing file tabularx.dtx (package) -> tabularx.sty
+File tabularx.dtx ended by \endinput.
+Lines  processed: 965
+Comments removed: 762
+Comments  passed: 1
+Codelines passed: 193
+
+)
+
+Generating file(s) ./dcolumn.sty 
+\openout0 = `./dcolumn.sty'.
+
+
+Processing file dcolumn.dtx (package) -> dcolumn.sty
+File dcolumn.dtx ended by \endinput.
+Lines  processed: 360
+Comments removed: 302
+Comments  passed: 1
+Codelines passed: 48
+
+
+Generating file(s) ./hhline.sty 
+\openout0 = `./hhline.sty'.
+
+
+Processing file hhline.dtx (package) -> hhline.sty
+File hhline.dtx ended by \endinput.
+Lines  processed: 321
+Comments removed: 247
+Comments  passed: 1
+Codelines passed: 66
+
+(./longtable.ins
+
+Generating file(s) ./longtable.sty 
+\openout0 = `./longtable.sty'.
+
+
+Processing file longtable.dtx (package) -> longtable.sty
+File longtable.dtx ended by \endinput.
+Lines  processed: 2144
+Comments removed: 1724
+Comments  passed: 1
+Codelines passed: 410
+
+) (./multicol.ins
+
+Generating file(s) ./multicol.sty 
+\openout0 = `./multicol.sty'.
+
+
+Processing file multicol.dtx (package,badness,check,marktrace,nobalance) -> mul
+ticol.sty
+File multicol.dtx ended by \endinput.
+Lines  processed: 4297
+Comments removed: 3194
+Comments  passed: 65
+Codelines passed: 995
+
+) (./bm.ins
+
+Generating file(s) ./bm.sty 
+\openout0 = `./bm.sty'.
+
+
+Processing file bm.dtx (package) -> bm.sty
+Lines  processed: 1697
+Comments removed: 1271
+Comments  passed: 4
+Codelines passed: 413
+
+)
+
+Generating file(s) ./ftnright.sty 
+\openout0 = `./ftnright.sty'.
+
+
+Processing file ftnright.dtx (package) -> ftnright.sty
+File ftnright.dtx ended by \endinput.
+Lines  processed: 1016
+Comments removed: 807
+Comments  passed: 4
+Codelines passed: 198
+
+
+Generating file(s) ./theorem.sty ./thb.sty ./thcb.sty ./thc.sty ./thp.sty ./thm
+b.sty ./thm.sty 
+\openout0 = `./theorem.sty'.
+
+\openout1 = `./thb.sty'.
+
+\openout2 = `./thcb.sty'.
+
+\openout3 = `./thc.sty'.
+
+\openout4 = `./thp.sty'.
+
+\openout5 = `./thmb.sty'.
+
+\openout6 = `./thm.sty'.
+
+
+Processing file theorem.dtx (package) -> theorem.sty
+                            (thb) -> thb.sty
+                            (thcb) -> thcb.sty
+                            (thc) -> thc.sty
+                            (thp) -> thp.sty
+                            (thmb) -> thmb.sty
+                            (thm) -> thm.sty
+File theorem.dtx ended by \endinput.
+Lines  processed: 1143
+Comments removed: 936
+Comments  passed: 4
+Codelines passed: 179
+
+
+Generating file(s) ./verbatim.sty ./verbtest.tex 
+\openout0 = `./verbatim.sty'.
+
+\openout1 = `./verbtest.tex'.
+
+
+Processing file verbatim.dtx (package) -> verbatim.sty
+                             (testdriver) -> verbtest.tex
+File verbatim.dtx ended by \endinput.
+Lines  processed: 1856
+Comments removed: 1475
+Comments  passed: 2
+Codelines passed: 371
+
+(./varioref.ins
+
+Generating file(s) ./varioref.sty 
+\openout0 = `./varioref.sty'.
+
+
+Processing file varioref.dtx (package) -> varioref.sty
+File varioref.dtx ended by \endinput.
+Lines  processed: 2145
+Comments removed: 1391
+Comments  passed: 11
+Codelines passed: 736
+
+)
+
+Generating file(s) ./xr.sty 
+\openout0 = `./xr.sty'.
+
+
+Processing file xr.dtx (package) -> xr.sty
+Lines  processed: 172
+Comments removed: 119
+Comments  passed: 1
+Codelines passed: 45
+
+
+Generating file(s) ./xspace.sty 
+\openout0 = `./xspace.sty'.
+
+
+Processing file xspace.dtx (package) -> xspace.sty
+Lines  processed: 507
+Comments removed: 377
+Comments  passed: 3
+Codelines passed: 118
+
+
+Generating file(s) ./showkeys.sty 
+\openout0 = `./showkeys.sty'.
+
+
+Processing file showkeys.dtx (package) -> showkeys.sty
+Lines  processed: 905
+Comments removed: 657
+Comments  passed: 2
+Codelines passed: 237
+
+
+Generating file(s) ./rawfonts.sty 
+\openout0 = `./rawfonts.sty'.
+
+
+Processing file rawfonts.dtx (package) -> rawfonts.sty
+Lines  processed: 219
+Comments removed: 125
+Comments  passed: 0
+Codelines passed: 90
+
+
+Generating file(s) ./somedefs.sty 
+\openout0 = `./somedefs.sty'.
+
+
+Processing file somedefs.dtx (package) -> somedefs.sty
+Lines  processed: 172
+Comments removed: 130
+Comments  passed: 0
+Codelines passed: 38
+
+
+Generating file(s) ./fontsmpl.sty ./fontsmpl.tex 
+\openout0 = `./fontsmpl.sty'.
+
+\openout1 = `./fontsmpl.tex'.
+
+
+Processing file fontsmpl.dtx (package) -> fontsmpl.sty
+                             (document) -> fontsmpl.tex
+File fontsmpl.dtx ended by \endinput.
+Lines  processed: 335
+Comments removed: 141
+Comments  passed: 1
+Codelines passed: 187
+
+(./afterpage.ins
+
+Generating file(s) ./afterpage.sty 
+\openout0 = `./afterpage.sty'.
+
+
+Processing file afterpage.dtx (package) -> afterpage.sty
+Lines  processed: 385
+Comments removed: 271
+Comments  passed: 1
+Codelines passed: 106
+
+)
+
+Generating file(s) ./enumerate.sty 
+\openout0 = `./enumerate.sty'.
+
+
+Processing file enumerate.dtx (package) -> enumerate.sty
+File enumerate.dtx ended by \endinput.
+Lines  processed: 334
+Comments removed: 273
+Comments  passed: 1
+Codelines passed: 51
+
+
+Generating file(s) ./indentfirst.sty 
+\openout0 = `./indentfirst.sty'.
+
+
+Processing file indentfirst.dtx (package) -> indentfirst.sty
+Lines  processed: 77
+Comments removed: 54
+Comments  passed: 1
+Codelines passed: 15
+
+
+Generating file(s) ./layout.sty 
+\openout0 = `./layout.sty'.
+
+
+Processing file layout.dtx (package) -> layout.sty
+File layout.dtx ended by \endinput.
+Lines  processed: 1024
+Comments removed: 589
+Comments  passed: 0
+Codelines passed: 426
+
+
+Generating file(s) ./calc.sty 
+\openout0 = `./calc.sty'.
+
+
+Processing file calc.dtx (package) -> calc.sty
+File calc.dtx ended by \endinput.
+Lines  processed: 1355
+Comments removed: 1091
+Comments  passed: 10
+Codelines passed: 245
+
+
+Generating file(s) ./trace.sty 
+\openout0 = `./trace.sty'.
+
+
+Processing file trace.dtx (package) -> trace.sty
+Lines  processed: 707
+Comments removed: 562
+Comments  passed: 4
+Codelines passed: 132
+
+
+Generating file(s) ./shellesc.sty 
+\openout0 = `./shellesc.sty'.
+
+
+Processing file shellesc.dtx (package) -> shellesc.sty
+Lines  processed: 240
+Comments removed: 166
+Comments  passed: 5
+Codelines passed: 56
+
+
+Generating file(s) ./h.tex ./s.tex ./e.tex ./q.tex ./r.tex ./x.tex 
+\openout0 = `./h.tex'.
+
+\openout1 = `./s.tex'.
+
+\openout2 = `./e.tex'.
+
+\openout3 = `./q.tex'.
+
+\openout4 = `./r.tex'.
+
+\openout5 = `./x.tex'.
+
+
+Processing file fileerr.dtx (help) -> h.tex
+                            (scroll) -> s.tex
+                            (edit) -> e.tex
+                            (batch) -> q.tex
+                            (run) -> r.tex
+                            (exit) -> x.tex
+File fileerr.dtx ended by \endinput.
+Lines  processed: 119
+Comments removed: 100
+Comments  passed: 0
+Codelines passed: 10
+
+***********************************************************
+*
+* To finish the installation you have to move the following
+* files into a directory searched by TeX:
+*
+* All the files with extension `.sty' and `.tex'
+* Note there also may be a file .tex which is `invisible'
+* on some operating systems.
+*
+* To produce the documentation run the .dtx files through LaTeX.
+*
+* Happy TeXing
+***********************************************************
+
+* Finally trying to make a file `.tex'.
+* (Placed at the end of this run, as this
+* may fail on some operating systems.)
+
+Generating file(s) ./.tex 
+
+\openout0 = `./.tex'.
+
+
+Processing file fileerr.dtx (return) -> .tex
+File fileerr.dtx ended by \endinput.
+Lines  processed: 119
+Comments removed: 100
+Comments  passed: 0
+Codelines passed: 10
+
+Overall statistics:
+Files  processed: 27
+Lines  processed: 25634
+Comments removed: 19498
+Comments  passed: 127
+Codelines passed: 5740
+ ) 
+Here is how much of TeX's memory you used:
+ 704 strings out of 495064
+ 7667 string characters out of 3182225
+ 54488 words of memory out of 3000000
+ 3933 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 15i,0n,19p,231b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+No pages of output.

@@ -1,0 +1,127 @@
+
+  <style>
+  #red, #green, #blue, #opacity {
+    float: left;
+    clear: left;
+    width: 200px;
+    margin: 15px;
+  }
+  #swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 250px;
+    background-image: none;
+  }
+  #red .ui-slider-range { background: #ef2929; }
+  #red .ui-slider-handle { border-color: #ef2929; }
+  #green .ui-slider-range { background: #8ae234; }
+  #green .ui-slider-handle { border-color: #8ae234; }
+  #blue .ui-slider-range { background: #729fcf; }
+  #blue .ui-slider-handle { border-color: #729fcf; }
+  </style>
+
+
+  <script>
+    function RGBAHEX(color) {
+      var colorC="";
+      if(color.indexOf("rgba")!=-1){
+      color=color.replace("rgba","");
+      color=color.replace(")","");
+      color=color.replace("(","");
+      color=color.replace(" ","");
+      var arr=color.split(",");
+      for(var x=0;x<3;x++){
+
+      if((parseInt(arr[x])).toString(16).toUpperCase().length==1)
+            colorC+="0"+(parseInt(arr[x])).toString(16).toUpperCase();
+      else
+      colorC+=(parseInt(arr[x])).toString(16).toUpperCase();
+     
+ }
+console.log(colorC);
+      colorC="#"+colorC;
+      }
+      else{
+            color=color.replace("#","");
+             
+            colorC="rgba("+parseInt(color.substring(0,2),16)+","+parseInt(color.substring(2,4),16)+","+parseInt(color.substring(4,6),16)+",1)";
+      }
+
+      return colorC;
+    }
+
+  $( function() {
+    function hexFromRGBA(r, g, b, a) {
+     console.log("rgba("+r+", "+g+", "+b+","+a/101+")");
+      return "rgba("+r+", "+g+", "+b+","+a/101+")";
+    }
+    
+    function refreshSwatch() {
+      var red = $( "#red" ).slider( "value" ),
+        green = $( "#green" ).slider( "value" ),
+        blue = $( "#blue" ).slider( "value" ),
+        opacity = $( "#opacity" ).slider( "value" ),
+        hex = hexFromRGBA( red, green, blue, opacity );
+
+      $( "#swatch" ).css( "background",  hex );
+ var nc=RGBAHEX(hex);
+console.log(nc);
+      $( "#colorP" ).val( nc);
+
+    }
+ 
+    $( "#red, #green, #blue" ).slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127,
+      slide: refreshSwatch,
+      change: refreshSwatch
+    });
+     $( "#opacity" ).slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 100,
+      value: 0,
+      slide: refreshSwatch,
+      change: refreshSwatch
+    });
+    $( "#red" ).slider( "value", 255 );
+    $( "#green" ).slider( "value", 140 );
+    $( "#blue" ).slider( "value", 60 );
+    $( "#opacity" ).slider( "value", 60 );
+  } );
+$("#swatch").on("click",function(){
+$("#colorP").trigger("click");
+});
+$("#colorP").on("change",function(){
+var color=RGBAHEX($("#colorP").val());
+color=color.replace("rgba","");
+      color=color.replace(")","");
+      color=color.replace("(","");
+      color=color.replace(" ","");
+      var arr=color.split(",");
+$( "#red" ).slider( "value", arr[0] );
+    $( "#green" ).slider( "value", arr[1] );
+    $( "#blue" ).slider( "value", arr[2] );
+    $( "#opacity" ).slider( "value", arr[3]*100 );
+
+
+});
+
+  </script>
+
+<body class="ui-widget-content" style="border:0;">
+
+<div id="red"></div>
+<div id="green"></div>
+<div id="blue"></div>
+<div id="opacity"></div>
+ 
+<div id="swatch" class="ui-widget-content ui-corner-all"></div>
+<input type="color" id="colorP" class="hidden"/> 
+ <input id="AceptarColor" type="button" value="Aceptar" onClick="Cambiar()"/>
+ 
+</body>
+

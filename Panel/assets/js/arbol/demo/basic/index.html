@@ -1,0 +1,36 @@
+
+
+	<style>
+	</style>
+	<link rel="stylesheet" href="./../../dist/themes/default/style.min.css" />
+<button id="pruba">hola</button>
+	<h1>Inline data demo</h1>
+	<div id="data" class="demo"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./../../dist/jstree.min.js"></script>
+	
+	<script>
+
+
+	// inline data demo
+	$('#data').jstree({
+		'core' : {
+			'data' : [
+				{ "text" : "Root node", 
+				  "children" : [
+						{ "text" : "Child node 1" },
+						{ "text" : "Child node 2" }
+				   ]},
+				{ "text" : "Root node2",
+				  "children" : [
+						{ "text" : "Child node 1a" },
+						{ "text" : "Child node 2a" }
+				   ]}
+			]
+		}
+	});
+
+	
+	</script>
+

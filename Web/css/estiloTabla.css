@@ -1,0 +1,18 @@
+.renglon{
+   height: 80%;
+   width: 100%;
+  }
+
+.headerT th{
+    color: #92D18B !important;
+    background-color: #003E17 !important;
+}
+
+[aria-label]{
+	color: #92D18B !important;
+	/*color: #FFFFFF !important;*/
+	/*background-color: #FFFFFF !important;*/
+    /*background-color: #003E17 !important;*/
+    background-color: #FFFFFF !important;
+
+}

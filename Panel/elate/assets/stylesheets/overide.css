@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.gris {
+	background-color: #333333;
+}
+
+.grisc {
+	color: #AFAFAF;
+}
+
+.naranja {
+		color: #cd6339;
+}
+.fnaranja {
+		background: #cd6339;
+}
+.azul {
+		color: #3967a5;
+}
+.fazul {
+		background: #3967a5;
+}
+.verde {
+		color: #589547;
+}
+.fverde {
+		background: #589547;
+}
+.mostaza {
+		color: #ba8d49;
+}
+.fmostaza {
+		background: #ba8d49;
+}
+.morado {
+		color: #5e5896;
+}
+.fmorado {
+		background: #5e5896;
+}
+
+
+
+.bbiodiversidad {
+	background-image:url(../images/secciones/01.jpg);
+}
+.biodiversidad {
+	background-color: #420202;
+	margin-bottom: 0px;
+}
+
+.becosistemas {
+	background-image:url(../images/secciones/02.jpg);
+}
+.ecosistemas {
+	background-color: #48280E;
+	margin-bottom: 0px;
+}
+
+.bespecies {
+	background-image:url(../images/secciones/03.jpg);
+}
+.especies {
+	background-color: #544A22;
+	margin-bottom: 0px;
+}
+
+.bgenes {
+	background-image:url(../images/secciones/04.jpg);
+}
+.genes {
+	background-color: #3D3511;
+	margin-bottom: 0px;
+}
+
+.bcorredor {
+	background-image:url(../images/secciones/05.jpg);
+}
+.corredor {
+	background-color: #1B2A17;
+	margin-bottom: 0px;
+}
+
+.bregion {
+	background-image:url(../images/secciones/06.jpg);
+}
+.region {
+	background-color: #212B09;
+	margin-bottom: 0px;
+}
+
+.bpais {
+	background-image:url(../images/secciones/07.jpg);
+}
+.pais {
+	background-color: #3D400E;
+	margin-bottom: 0px;
+}
+
+.bplaneta {
+	background-image:url(../images/secciones/08.jpg);
+}
+.planeta {
+	background-color: #493F0D;
+	margin-bottom: 0px;
+}
+
+.busos {
+	background-image:url(../images/secciones/09.jpg);
+}
+.usos {
+	background-color: #6A4D1C;
+	margin-bottom: 0px;
+}
+
+.ninos {
+	background-color: #157750;
+	margin-bottom: 0px;
+}
+
+.maestros {
+	background-color: #0F9082;
+	margin-bottom: 0px;
+}
+
+.medios {
+	background-color: #84181b;
+	margin-bottom: 0px;
+}
+
+/* Banner */
+
+	#banner {
+		/*background-image: url("../images/banner.jpg");*/
+		background-position: center center;
+		background-size: cover;
+		height: 242px;
+		text-align: center;
+		/*position: relative;*/
+	}
+
+		#banner header {
+			/*position: absolute;*/		
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #212121;
+			background: rgba(27, 27, 27, 0.75);
+			color: #fff;
+			padding: 0 0 0 0;
+		}
+
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 242px;
+}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+
+.selectc {
+	width: 20px;
+    vertical-align: bottom;
+}
+.selectc hover {
+	width: 20px;
+    vertical-align: bottom;
+}
+
+label {
+	font-weight: normal;
+}
+
+
+/*
+.video-resposive iframe {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+*/
+
+	/*
+	This doesn't work
+	margin-left: -25%;
+	margin-top: -25%;
+	*/
+
+/*
+	width: 100%;
+	height: 385px;
+
+	padding: 20px;  
+	background: red;
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+*/
+.videor {
+	width: 100%;
+	height: 385px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.video-resposive {
+	padding-bottom: 56.25%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.video-resposive iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.panel-title {
+	font-size: 18px;
+	font-weight: 600 !important;
+}

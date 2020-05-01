@@ -1,0 +1,1000 @@
+  292  rubber -d --shell-escape --into=LaTeX/13918172814dir LaTeX/13918172814dir/latexTemplate11.tex && mv LaTeX/13918172814dir/latexTemplate11.pdf LaTeX/13918172814dir/13918172814.pdf
+  293  rubber -d --shell-escape --into=LaTeX/13918173430dir LaTeX/13918173430dir/latexTemplate11.tex && mv LaTeX/13918173430dir/latexTemplate11.pdf LaTeX/13918173430dir/13918173430.pdf
+  294  lualatex --help
+  295  yum install luatex
+  296  yum install latex-luatex
+  297  rubber -d --shell-escape --into=LaTeX/13918173430dir LaTeX/13918173430dir/latexTemplate11.tex && mv LaTeX/13918173430dir/latexTemplate11.pdf LaTeX/13918173430dir/13918173430.pdf
+  298  cd LaTeX/
+  299  ls
+  300  cd 13918173430dir/
+  301  ls
+  302  wget https://www.tug.org/texlive//Contents/live/texmf-dist/tex/latex/base/ltluatex.tex
+  303  ll
+  304  chown apache:webmaster ltluatex.tex 
+  305  ll
+  306  chmod 775 ltluatex.tex 
+  307  cp ltluatex.tex ../../
+  308  clear
+  309  ll
+  310  pwd
+  311  cd ..
+  312  ls
+  313  rubber -d --shell-escape --into=LaTeX/13918173430dir LaTeX/13918173430dir/latexTemplate11.tex && mv LaTeX/13918173430dir/latexTemplate11.pdf LaTeX/13918173430dir/13918173430.pdf
+  314  yum install latex
+  315  yum install Latex
+  316  yum --help
+  317  man yum
+  318  yum update latex
+  319  latex --vesion
+  320  latex --version
+  321  yum upgrade pdftex
+  322  cd reportesPDF/
+  323  ll
+  324  rubber -d --shell-escape --into=LaTeX/13918161953dir LaTeX/13918161953dir/latexTemplate11.tex && mv LaTeX/13918161953dir/latexTemplate11.pdf LaTeX/13918161953dir/13918161953.pdf
+  325  ll
+  326  cd LaTeX/
+  327  ls
+  328  cd ..
+  329  rubber -d --shell-escape --into=LaTeX/13918173430dir LaTeX/13918173430dir/latexTemplate11.tex && mv LaTeX/13918173430dir/latexTemplate11.pdf LaTeX/13918173430dir/13918173430.pdf
+  330  rubber -d --shell-escape --into=LaTeX/13918175320dir LaTeX/13918175320dir/latexTemplate11.tex && mv LaTeX/13918175320dir/latexTemplate11.pdf LaTeX/13918175320dir/13918175320.pdf
+  331  cp ltluatex.tex LaTeX/13918175320dir/
+  332  rubber -d --shell-escape --into=LaTeX/13918175320dir LaTeX/13918175320dir/latexTemplate11.tex && mv LaTeX/13918175320dir/latexTemplate11.pdf LaTeX/13918175320dir/13918175320.pdf
+  333  clear
+  334  ll
+  335  cd LaTeX/
+  336  cd templates/
+  337  ls
+  338  ll
+  339  cñ
+  340  ñ
+  341  cp ../../ltluatex.tex .
+  342  clear
+  343  ll
+  344  cd ..
+  345  ll
+  346  rm -rf 1*
+  347  ll
+  348  cd ..
+  349  cd reportesPDF/
+  350  rubber -d --shell-escape --into=LaTeX/13918180505dir LaTeX/13918180505dir/latexTemplate11.tex && mv LaTeX/13918180505dir/latexTemplate11.pdf LaTeX/13918180505dir/13918180505.pdf
+  351  cp ltluatex.tex LaTeX/13918180505dir/
+  352  rubber -d --shell-escape --into=LaTeX/13918180505dir LaTeX/13918180505dir/latexTemplate11.tex && mv LaTeX/13918180505dir/latexTemplate11.pdf LaTeX/13918180505dir/13918180505.pdf
+  353  lualatex --version
+  354  cat ltluatex.tex 
+  355  ll
+  356  clear
+  357  wget ftp://ftp.dante.de/tex-archive/macros/latex/base/ltluatex.dtx
+  358  ll
+  359  mv ltluatex.tex ltluatex2.tex
+  360  tex ltluatex.dtx 
+  361  clear
+  362  cd ctablestack
+  363  ls
+  364  ll
+  365  cd ..
+  366  ls
+  367  cd csvsimple
+  368  l
+  369  ls
+  370  ll
+  371  history
+  372  history | grep "grp"
+  373  history | grep "user"
+  374  who
+  375  whos
+  376  whoami
+  377  usermod -aG wheel ranyart
+  378  eixt
+  379  exit
+  380  passwd ranyart
+  381  exit
+  382  exit
+  383  clear
+  384  exit 
+  385  ./install-tl
+  386  yum install perl-Digest-MD5 -y
+  387  ./install-tl
+  388  pdflatex latexTemplate11.tex test.pdf
+  389  xelatex latexTemplate11.tex test.pdf
+  390  ls -l
+  391  mv ltluatex.tex ltluatex.tex_bk
+  392  xelatex latexTemplate11.tex test.pdf
+  393  fmtutil-sys --all
+  394  tlmgr update --all
+  395  yum install texlive tex-live-latex tetex-latex tetex-doc tetex-fonts
+  396  yum install tlmgr
+  397  yum install perl-tk
+  398  yum install perl-Tk
+  399  tlmgr update --all
+  400  xelatex latexTemplate11.tex test.pdf
+  401  mv ltluatex.tex_bk ltluatex.tex
+  402  xelatex latexTemplate11.tex test.pdf
+  403  lualatex latexTemplate11.tex test.pdf
+  404  vim test.tex
+  405  lualatex test.tex 
+  406  xelatex test.tex 
+  407  yum uninstall xelatex lualatex xetex luatex
+  408  yum remove xelatex lualatex xetex luatex
+  409  yum remove xelatex*
+  410  yum remove xetex-xelatex
+  411  yum remove xetex-xelatex*
+  412  yum remove latex-xelatex
+  413  yum install texlive-collection-xetex
+  414  yum remove texlive-collection-xetex
+  415  xelatex 
+  416  xetex 
+  417  clear
+  418  yum remove texlive-xetex
+  419  yum remove texlive-lualatex
+  420  yum remove texlive-luatex
+  421  xelatex test.tex 
+  422  lualatex test.tex 
+  423  yum install texlive-lualatex
+  424  yum install texlive-luatex
+  425  lualatex test.tex 
+  426  luatex test.tex 
+  427  yum remove texlive-luatex
+  428  yum install texlive-xetex
+  429  xelatex test.tex 
+  430  yum install texlive-collection-xetex
+  431  xelatex test.tex 
+  432  yum install texlive-luatex
+  433  yum install texlive-collection-luatex
+  434  ll
+  435  yum purge texlive*
+  436  yum remove --purge texlive*
+  437  yum --help
+  438  yum remove texlive*
+  439  yum erase texlive texlive*
+  440  history
+  441  ls -l
+  442  cd install-tl-20180913/
+  443  ls -l
+  444  export PATH=/opt/texlive/2016/bin/x86_64-linux/:$PATH
+  445  exit
+  446  clear
+  447  exit
+  448  cd
+  449  cd /home/roberto/
+  450  cd install-tl-20180913/
+  451  ls -l
+  452  ./install-tl
+  453  export MANPATH=$MANPATH:/usr/local/texlive/2018/texmf-dist/doc/man
+  454  export INFOPATH=$MANPATH:/usr/local/texlive/2018/texmf-dist/doc/info
+  455  export INFOPATH=$INFOPATH:/usr/local/texlive/2018/texmf-dist/doc/info
+  456  export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux
+  457  exit
+  458  cd /
+  459  cd var/www/html/nrb/optimization
+  460  ls
+  461  chmod 777 tool.php
+  462  cd /
+  463  cd var/www/html/nrb/optimization
+  464  ls
+  465  cd assets
+  466  ls
+  467  cd css
+  468  ls
+  469  chmod 777 style.css
+  470  cd ..
+  471  ls
+  472  cd ..
+  473  ls
+  474  chmod 777 index.php
+  475  exit
+  476  cd /
+  477  cd var/www/html/nrb/optimization
+  478  chmod 777 output
+  479  cd outout
+  480  cd output
+  481  ls
+  482  cd ..
+  483  cd output
+  484  chmod 777 distancev2
+  485  lualatex test.tex
+  486  ./distancev2 -b /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -f /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -a b -s 10000 -u x -r Haiti -v 1 -g 1 -e y -o 1
+  487  ./distancev2 -b /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -f /var/www/html/nrb/optimization/maps/Haiti_fricc.tif -a b -s 10000 -u x -r Haiti -v 1 -g 1 -e y -o 1
+  488  ls
+  489  ./distancev2 -b /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -f /var/www/html/nrb/optimization/maps/Haiti_fricc.tif -a b -s 10000 -u x -r Prueba -v 1 -g 1 -e y -o 1
+  490  ls
+  491  nano exported_points.csv
+  492  nano Exported_points.csv
+  493  cd /
+  494  cd var/www/html/nrb/optimziation
+  495  cd var/www/html/nrb/optimization
+  496  cd outout
+  497  cd output
+  498  nano Exported_points.csv
+  499  l
+  500  ls -l
+  501  cd /
+  502  cd var/log/httpd
+  503  nano error_log
+  504  ls
+  505  nano data.scv
+  506  nano data.csv
+  507  nano Exported_points.csv
+  508  cd /
+  509  cd var/www/html/nrb/optimization/output
+  510  ls
+  511  najo Exported_points.csv
+  512  nano Exported_points.csv
+  513  ./distancev2 -b /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -f /var/www/html/nrb/optimization/maps/Haiti_fricc.tif -a b -s 25000 -u x -r Prueba2 -v 1 -g 1 -e y -o 1
+  514  nano Exported_points.csv
+  515  ls
+  516  data.scv
+  517  nano data.csv
+  518  cd /
+  519  cd var/log/httpd
+  520  nano erro_log
+  521  nano error_log
+  522  cd /
+  523  cd var/log/httpd
+  524  nano error_log
+  525  mysql -u enes -p
+  526  cd /
+  527  cd var/www/html/nrb/optimization/output
+  528  ls
+  529  chmod 777 distancev3
+  530  mysql -u enes -p
+  531  cd /
+  532  cd var/log/httpd
+  533  nano error_log
+  534  mysql -u enes -p
+  535  nano error_log
+  536  cd /
+  537  cd var/www/html/httpd
+  538  cd var/www/html/nrb
+  539  cd ptimization
+  540  cd optimization
+  541  cd output
+  542  nano data.csv
+  543  ./distancev3 -b /var/www/html/nrb/optimization/maps/Haiti_biomass.tif -f /var/www/html/nrb/optimization/maps/Haiti_fricc.tif -a b -s 25000 -u x -r Prueba2 -v 1 -g 1 -e y -o 1
+  544  nano data.csv
+  545  chmod 777 distancev3
+  546  ls
+  547  nano data.csv
+  548  chmod 777 data.csv
+  549  nano data.csv
+  550  ls
+  551  nano data.csv
+  552  ls
+  553  nano data.csv
+  554  ls
+  555  mysql -u -p
+  556  mysql -u enes -p
+  557  rm -rf 13918220347dir/
+  558  rm -rf 14918151151dir/
+  559  cd 13918214559dir/
+  560  ll
+  561  exit
+  562  chown apache:apache freightSansPro/
+  563  cd freightSansPro/
+  564  ls
+  565  ll
+  566  cd ..
+  567  ll
+  568  cd freightSansPro/
+  569  chown apache:apache *
+  570  ll
+  571  cd ..
+  572  clear
+  573  ll
+  574  cd fonts/freightSansPro/
+  575  mv FreightSansMedium\ Italic.otf FreightSansMediumItalic.otf
+  576  ll
+  577  pwd
+  578  cd ..
+  579  vim latexTemplate11.tex 
+  580  ll fonts/freightSansPro/
+  581  vim ../../latexTemplate11.tex
+  582  vim latexTemplate11.tex 
+  583  lualatex latexTemplate11.tex 
+  584  vim latexTemplate11.tex 
+  585  clear
+  586  ll fonts/freightSansPro/
+  587  lualatex latexTemplate11.tex 
+  588  vim latexTemplate11.tex 
+  589  lualatex latexTemplate11.tex 
+  590  clear
+  591  ll
+  592  exit
+  593  xelatex test.tex test.pdf
+  594  export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux
+  595  xelatex test.tex test.pdf
+  596  ls -l
+  597  xelatex latexTemplate11.tex
+  598  lualatex latexTemplate11.tex
+  599  pwd
+  600  vim latexTemplate11.tex 
+  601  xelatex latexTemplate11.tex
+  602  lualatex latexTemplate11.tex
+  603  wget http://www.fontspace.com/download/29711/65092d0986ab4f11834526e64da59a08/billy-argel_cassandra-personal-use.zip
+  604  unzip billy-argel_cassandra-personal-use.zip 
+  605  mv Cassandra\ Personal\ Use.ttf CPU.ttf
+  606  vim latexTemplate11.tex 
+  607  lualatex latexTemplate11.tex
+  608  ls -l
+  609  vim /etc/profile.d/latexPath.sh
+  610  chmod 777 /etc/profile.d/latexPath.sh 
+  611  ls -l /etc/profile.d/latexPath.sh 
+  612  export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux
+  613  export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux >> /etc/profile.d/latexPath.sh 
+  614  more /etc/profile.d/latexPath.sh 
+  615  echo "export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux" >> /etc/profile.d/latexPath.sh 
+  616  more /etc/profile.d/latexPath.sh 
+  617  echo "export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linux" > /etc/profile.d/latexPath.sh 
+  618  more /etc/profile.d/latexPath.sh 
+  619  more /etc/profile.d/latexPath.sh 
+  620  python
+  621  ls -l
+  622  cd ..
+  623  ls -l
+  624  cd 18918180837dir/
+  625  ls -l
+  626  exit
+  627  ls -l
+  628  pwd
+  629  eixt
+  630  exit
+  631  ls -l
+  632  cd /
+  633  exit
+  634  cd /var/www/html/nrb/Mapps/Conabio/reportesPDF/LaTeX/
+  635  ls -l
+  636  cd 18918182417dir/
+  637  ls -l
+  638  lualatex latexTemplate11.tex latexTemplate11.pdf
+  639  cd ..
+  640  cd 18918182518dir/
+  641  lualatex latexTemplate11.tex latexTemplate11.pdf
+  642  ls -l
+  643  mv latexTemplate11.pdf 18918182518.pdf
+  644  vim latexTemplate11.tex 
+  645  vim latexTemplate11.tex 
+  646  lualatex latexTemplate11.tex latexTemplate11.pdf
+  647  mv latexTemplate11.pdf 18918182518.pdf
+  648  yum install texlive-python
+  649  yum install texlive-pythontex
+  650  wget http://mirrors.ctan.org/macros/latex/contrib/pythontex.zip
+  651  unzip pythontex.zip 
+  652  cd python
+  653  cd pythontex
+  654  cat README 
+  655  python pythontex_install.py 
+  656  ls -l
+  657  cd ..
+  658  cd ..
+  659  ls .-l
+  660  cd ..
+  661  ls -l
+  662  cd python-sty/
+  663  ls -l
+  664  ./build.sh 
+  665  yum install rubber
+  666  ./build.sh 
+  667  cd ..
+  668  cd LaTeX/
+  669  ls
+  670  cd 18918182518dir/
+  671  ls -l
+  672  lualatex latexTemplate11.tex 
+  673  tail ../../creaPDF_Latex.php 
+  674  tail -n 20 ../../creaPDF_Latex.php 
+  675  grep rubber ../../creaPDF_Latex.php 
+  676  rubber -d --shell-escape latexTemplate11.tex 
+  677  rubber --help
+  678  man rubber
+  679  xelatex latexTemplate11.tex 
+  680  mv latexTemplate11.pdf 18918182518.pdf
+  681  vim latexTemplate11.tex 
+  682  xelatex latexTemplate11.tex 
+  683  vim latexTemplate11.tex 
+  684  xelatex latexTemplate11.tex 
+  685  vim latexTemplate11.tex 
+  686  xelatex latexTemplate11.tex 
+  687  vim latexTemplate11.tex 
+  688  xelatex latexTemplate11.tex 
+  689  vim latexTemplate11.tex 
+  690  ls -l fonts/
+  691  vim latexTemplate11.tex 
+  692  cd ../../../
+  693  ls -l
+  694  cd ..
+  695  cd ..
+  696  ls -l
+  697  mv -R wct wct_bk
+  698  mv -r wct wct_bk
+  699  mv wct wct_bk
+  700  cp -R wct2 wct2_bk
+  701  vm wct2 wct
+  702  mv wct2 wct
+  703  cd wct
+  704  ls -l
+  705  grep -R "wct2" *
+  706  cd ..
+  707  ls -l
+  708  chmod 700 *_bk
+  709  ls -l
+  710  chmod 400 *_bk
+  711  cd Mapps/Conabio/reportesPDF/
+  712  xelatex LaTeX/18918182518dir/latexTemplate11.tex 
+  713  grep rubber creaPDF_Latex.php 
+  714  rubber -d --shell-escape --into=LaTeX/18918182518dir/ LaTeX/18918182518dir/latexTemplate11.tex -m xelatex
+  715  rubber -m xelatex -d --shell-escape --into=LaTeX/18918182518dir/ LaTeX/18918182518dir/latexTemplate11.tex
+  716   xelatex -d --shell-escape --into=LaTeX/18918182518dir/ LaTeX/18918182518dir/latexTemplate11.tex
+  717  cd /var/www/html/nrb/
+  718  ls -l
+  719  cd wct
+  720  ls -l
+  721  cd php/Malawi/
+  722  ls -l
+  723  cd 3
+  724  ls -l
+  725  mv 12922-18072900-31\[1\].CSV 12922-18072900-31.CSV
+  726  ls -l
+  727  cd --
+  728  cd /var/www/html/nrb/wct
+  729  ls -l
+  730  cd php/
+  731  ls -l
+  732  cd Malawi/
+  733  ls -l
+  734  cd 3
+  735  ls -l
+  736  ls -l
+  737  mv 14155-18072800-28\[1\].CSV 14155-18072800-28.CSV
+  738  history | grep apache
+  739  cd /var/www/html/nrb/Mapps/Conabio/reportesPDF/
+  740  ls -Z LaTeX/
+  741  cd ..
+  742  ls -Z 
+  743  chcon -t httpd_sys_rw_content_t reportesPDF/ -R
+  744  clear
+  745  chcon -t httpd_sys_rw_content_t reportesPDF/
+  746  ls ->
+  747  ls -Z
+  748  cd reportesPDF/
+  749  ls -Z
+  750  chcon -t httpd_sys_rw_content_t LaTeX/ -R
+  751  ls -l
+  752  cd LaTeX/
+  753  ls -Z
+  754  ll
+  755  ll
+  756  cd 18918231226dir
+  757  ls -l
+  758  cd ..
+  759  cd ..
+  760  exit
+  761  history
+  762  clear
+  763  cd /var/www/html/nrb/Mapps/Conabio/reportesPDF/
+  764  sudo chcon -t httpd_sys_rw_content_t LaTeX/
+  765  ls -Z
+  766  cd LaTeX/
+  767  ls
+  768  ll
+  769  ls -Z
+  770  ll
+  771  ls -Z
+  772  ll
+  773  ls -Z
+  774  clear 
+  775  ll
+  776  chown apache:webmaster 18918233454dir/
+  777  sudo chcon -t httpd_sys_rw_content_t 18918233454dir/
+  778  ll
+  779  ls -Z
+  780  ll
+  781  ls -Z
+  782  cd 19918144708dir/
+  783  ls
+  784  ll
+  785  cd ..
+  786  ll
+  787  cd 19918144743dir/
+  788  ls
+  789  ll
+  790  cd ..
+  791  ls
+  792  cd ..
+  793  ls -l
+  794  chown apache:webmaster -R reportesPDF/
+  795  cd reportesPDF/
+  796  ll
+  797  clear
+  798  find . -type f -exec chmod 0644 {} \;
+  799  find . -type d -exec chmod 0755 {} \;
+  800  cd ..
+  801  sudo chcon -t httpd_sys_content_t reportesPDF/ -R
+  802  ll
+  803  cd reportesPDF/
+  804  ls
+  805  ll
+  806  cd LaTeX/
+  807  ls
+  808  ll
+  809  cd ..
+  810  sudo chcon -t httpd_sys_rw_content_t LaTeX/ -R
+  811  ll
+  812  cd LaTeX/
+  813  ls
+  814  cd templates/
+  815  ls
+  816  ll
+  817  cd ..
+  818  ll
+  819  cd LaTeX/
+  820  ls
+  821  ll
+  822  cd ..
+  823  ll
+  824  cd reportesPDF/
+  825  chown apache:webmaster * -R
+  826  cd re
+  827  cd reportesPDF/
+  828  ll
+  829  cd LaTeX/templates/
+  830  ls -l
+  831  cd ..
+  832  ls -l
+  833  cd ..
+  834  ls -l
+  835  ls -l
+  836  cd LaTeX/
+  837  ls -l
+  838  rm *dir -r
+  839  rm *dir -rf
+  840  ls -l
+  841  ls -l
+  842  cd 18918231647dir/
+  843  ls -l
+  844  clear
+  845  ll
+  846  cd ..
+  847  ls -l
+  848  rm -rf *dir
+  849  cd ..
+  850  ls
+  851  vim creaPDF_Latex.php 
+  852  vim creaPDF_Latex.php 
+  853  vim creaPDF_Latex.php 
+  854  vim creaPDF_Latex.php 
+  855  cat /var/www/html/nrb/Mapps/Global/optimization/getFL.php 
+  856  vim creaPDF_Latex.php 
+  857  vim creaPDF_Latex.php 
+  858  cat /var/www/html/nrb/Mapps/Global/optimization/getFL.php 
+  859  cat /var/www/html/nrb/Mapps/Cemie/reportesPDF_LaTeX/optimization/getFL.php 
+  860  vim creaPDF_Latex.php 
+  861  ls -l
+  862  cd LaTeX/
+  863  ls -l
+  864  rm -rf *dir
+  865  cd ..
+  866  vim creaPDF_Latex.php 
+  867  cd LaTeX/
+  868  ls -l
+  869  cd 18918233331dir/
+  870  ls -l
+  871  cd ..
+  872  cd ..
+  873  vim creaPDF_Latex.php 
+  874  rm -rf LaTeX/*dir
+  875  echo avantasia3 | su roberto -c 'rubber -d -m xelatex --shell-escape --into=LaTeX/18918233454dir LaTeX/18918233454dir/latexTemplate11.tex && mv LaTeX/18918233454dir/latexTemplate11.pdf LaTeX/18918233454dir/18918233454.pdf'
+  876  ls -l
+  877  ls -l LaTeX/18918233454dir/
+  878  vim creaPDF_Latex.php 
+  879  history|grep "chcon"
+  880  vim creaPDF_Latex
+  881  vim creaPDF_Latex.php 
+  882  vim creaPDF_Latex.php 
+  883  vim creaPDF_Latex.php 
+  884  vim creaPDF_Latex.php 
+  885  echo avantasia3 | su roberto -c 'chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir -R;rubber -d -m xelatex --shell-escape --into=LaTeX/19918143637dir LaTeX/19918143637dir/latexTemplate11.tex && mv LaTeX/19918143637dir/latexTemplate11.pdf LaTeX/19918143637dir/19918143637.pdf
+  886  '
+  887  ls -l LaTeX/
+  888  ls -Z LaTeX/
+  889  echo avantasia3 | su roberto -c 'chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir;rubber -d -m xelatex --shell-escape --into=LaTeX/19918143637dir LaTeX/19918143637dir/latexTemplate11.tex && mv LaTeX/19918143637dir/latexTemplate11.pdf LaTeX/19918143637dir/19918143637.pdf
+  890  '
+  891  ls -Z LaTeX/
+  892  echo avantasia3 | su roberto -c 'chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir'
+  893  su roberto -c 'chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir'
+  894  chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir
+  895  chcon -h httpd_sys_rw_content_t LaTeX/19918143637dir
+  896  chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir
+  897  restorecon LaTeX/19918143637dir
+  898  chcon -t httpd_sys_rw_content_t LaTeX/19918143637dir
+  899  man mkdri
+  900  man mkdir
+  901  vim creaPDF_Latex.php 
+  902  vim creaPDF_Latex.php 
+  903  ls -Z LaTeX/
+  904  ls -Z LaTeX/19918144516dir/
+  905  ls -lLaTeX/19918144516dir/
+  906  ls -l LaTeX/19918144516dir/
+  907  vim creaPDF_Latex.php 
+  908  rm -rf LaTeX/*dir
+  909  ls -l LaTeX
+  910  ls -l LaTeX/19918144708dir/
+  911  vim creaPDF_Latex.php 
+  912  rm -rf LaTeX/*dir
+  913  ls -l LaTeX/19918144743dir/
+  914  vim creaPDF_Latex.php 
+  915  rm -rf LaTeX/*dir
+  916  ls -l LaTeX/
+  917  rm -rf LaTeX/*dir
+  918  vim creaPDF_Latex.php 
+  919  ls -l LaTeX/
+  920  ls -l LaTeX/19918145219dir/
+  921  ls -l LaTeX/19918150037dir/
+  922  vim creaPDF_Latex.php 
+  923  whoami
+  924  vim /etc/httpd/conf/httpd.conf
+  925  service httpd restar
+  926  service httpd restart
+  927  rm -rf LaTeX/*dir
+  928  ls -l LaTeX/
+  929  ls -l LaTeX/19918150743dir/
+  930  ls -Z LaTeX/19918150743dir/
+  931  ls -Z LaTeX/
+  932  vim creaPDF_Latex.php 
+  933  rm -rf LaTeX/*dir
+  934  ls -Z LaTeX/
+  935  ls -l LaTeX/19918150933dir/
+  936  setenforce 0
+  937  ls -l LaTeX/19918151254dir/
+  938  setenforce 1
+  939  setenforce --help
+  940  man setenforce
+  941  setenforce 1
+  942  setenforce Enforcing
+  943  setenforce Permissive
+  944  man setenforce
+  945  setenforce Enforcing
+  946  vim creaPDF_Latex.php 
+  947  rm -rf LaTeX/*dir
+  948  ls -l LaTeX/19918151637dir/
+  949  ls -l LaTeX/
+  950  vim creaPDF_Latex.php 
+  951  rm -rf LaTeX/*dir
+  952  vim creaPDF_Latex.php 
+  953  rubber -d -m xelatex --shell-escape --into=LaTeX/19918151840dir LaTeX/19918151840dir/latexTemplate11.tex && mv LaTeX/19918151840dir/latexTemplate11.pdf LaTeX/19918151840dir/19918151840.pdf
+  954  su apache
+  955  locate rubber
+  956  vim creaPDF_Latex.php 
+  957  rm -rf LaTeX/*dir
+  958  ls -l LaTeX/19918152059dir/
+  959  ls -l
+  960  vim /etc/php.ini 
+  961  vim /etc/php.ini 
+  962  vim /etc/php.ini 
+  963  ls -l /bin/rubber
+  964  rm -rf LaTeX/*dir
+  965  vim creaPDF_Latex.php 
+  966  vim creaPDF_Latex.php 
+  967  ls- l LaTeX/19918153039dir/
+  968  ls -l LaTeX/19918153039dir/
+  969  ls -l
+  970  more script.sh 
+  971  vim creaPDF_Latex.php 
+  972  rm -rf LaTeX/*dir
+  973  ls -l LaTeX/19918153202dir/
+  974  more LaTeX/19918153202dir/script.sh 
+  975  rm -rf LaTeX/*dir
+  976  vim creaPDF_Latex.php 
+  977  rm -rf LaTeX/*dir
+  978  ls -l LaTeX/19918153320dir/
+  979  cat LaTeX/19918153320dir/script.sh 
+  980  LaTeX/19918153320dir/script.sh 
+  981  ls -l LaTeX/19918153320dir/
+  982  rm -rf LaTeX/*dir
+  983  vim creaPDF_Latex.php 
+  984  rm -rf LaTeX/*dir
+  985  ls -l LaTeX/19918153547dir/
+  986  echo avantasia3 | su roberto -c ' echo avantasia3 | sudo su -c rubber -d -m xelatex --shell-escape --into=LaTeX/19918153547dir LaTeX/19918153547dir/latexTemplate11.tex && mv LaTeX/19918153547dir/latexTemplate11.pdf LaTeX/19918153547dir/19918153547.pdf
+  987  '
+  988  cat ../../Cemie/reportesPDF_LaTeX/optimization/getFL.php 
+  989  vim creaPDF_Latex.php 
+  990  rm -rf LaTeX/*dir
+  991  ls -l LaTeX/19918153721dir/
+  992  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+  993  file xelatex
+  994  yum install texlive-xelatex
+  995  more /etc/profile.d/latexPath.sh 
+  996  vim ~/.bashrc 
+  997  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+  998  vim ~/.bash_profile 
+  999  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+ 1000  exit
+ 1001  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+ 1002  cd reportesPDF/
+ 1003  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+ 1004  source ~/.bashrc 
+ 1005  vim ~/.bashrc 
+ 1006  vim /home/ranyart/.bashrc 
+ 1007  vim /home/ranyart/.bash_profile
+ 1008  vim ~/.bash_profile 
+ 1009  source ~/.bash_profile 
+ 1010  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf'
+ 1011  echo avantasia3 | su roberto -c 'echo avantasia3 | sudo -S rubber -d -m xelatex --shell-escape --into=LaTeX/19918153721dir LaTeX/19918153721dir/latexTemplate11.tex && mv LaTeX/19918153721dir/latexTemplate11.pdf LaTeX/19918153721dir/19918153721.pdf' 2>error
+ 1012  more error 
+ 1013  vim creaPDF_Latex.php 
+ 1014  rm -rf LaTeX/*dir
+ 1015  ls -l
+ 1016  more error.txt 
+ 1017  ls -l LaTeX/19918154718dir/
+ 1018  vim creaPDF_Latex.php 
+ 1019  rm -rf LaTeX/*dir
+ 1020  ls -l LaTeX/19918154935dir/
+ 1021  rm -rf LaTeX/*dir
+ 1022  vim creaPDF_Latex.php 
+ 1023  rm -rf LaTeX/*dir
+ 1024  ls -l LaTeX/19918155127dir/
+ 1025  more script.sh 
+ 1026  more error.txt 
+ 1027  vim creaPDF_Latex.php 
+ 1028  rm -rf LaTeX/*dir
+ 1029  more error.txt 
+ 1030  yum install texlive-collection-xetex
+ 1031  rm -rf LaTeX/*dir
+ 1032  more error.txt 
+ 1033  vim LaTeX/templates/latexTemplate11.tex 
+ 1034  rubber -d -m xelatex --shell-escape --into=LaTeX/19918161505dir LaTeX/19918161505dir/latexTemplate11.tex && mv LaTeX/19918161505dir/latexTemplate11.pdf LaTeX/19918161505dir/19918161505.pdf
+ 1035  vim LaTeX/19918161505dir/latexTemplate11.tex 
+ 1036  rubber -d -m xelatex --shell-escape --into=LaTeX/19918161505dir LaTeX/19918161505dir/latexTemplate11.tex && mv LaTeX/19918161505dir/latexTemplate11.pdf LaTeX/19918161505dir/19918161505.pdf
+ 1037  vim LaTeX/19918161505dir/latexTemplate11.tex 
+ 1038  vim LaTeX/19918161505dir/latexTemplate11.tex 
+ 1039  rubber -d -m xelatex --shell-escape --into=LaTeX/19918161505dir LaTeX/19918161505dir/latexTemplate11.tex && mv LaTeX/19918161505dir/latexTemplate11.pdf LaTeX/19918161505dir/19918161505.pdf
+ 1040  ls -l
+ 1041  du -hs
+ 1042  df -hs
+ 1043  df -h
+ 1044  ls -l /var/lib/php/session/
+ 1045  vim /etc/httpd/conf/httpd.conf
+ 1046  service httpd restart
+ 1047  wiche xelatex
+ 1048  wich xelatex
+ 1049  which xelatex
+ 1050  echo $PATH
+ 1051  alias xelatex=/usr/local/texlive/2018/bin/x86_64-linux/xelatex 
+ 1052  which xelatex
+ 1053  cd LaTeX/19918161505dir/
+ 1054  ls -l
+ 1055  xelatex latexTemplate11.tex 
+ 1056  pwd
+ 1057  vim latexTemplate11.tex 
+ 1058  xelatex latexTemplate11.tex 
+ 1059  vim latexTemplate11.tex 
+ 1060  xelatex latexTemplate11.tex 
+ 1061  vim latexTemplate11.tex 
+ 1062  xelatex latexTemplate11.tex 
+ 1063  vim latexTemplate11.tex 
+ 1064  rubber -d --shell-scape -m xelatex latexTemplate11.tex
+ 1065  rubber -d -m xelatex latexTemplate11.tex
+ 1066  vim latexTemplate11.tex 
+ 1067  rubber -d -m xelatex latexTemplate11.tex
+ 1068  vim latexTemplate11.tex 
+ 1069  rubber -d -m xelatex latexTemplate11.tex
+ 1070  vim latexTemplate11.tex 
+ 1071  yum install texlive-extras
+ 1072  yum install texlive-extra
+ 1073  yum install texlive-extra*
+ 1074  yum install texlive-collection-extras
+ 1075  yum install texlive-collection-extra
+ 1076  xelatex latexTemplate11.tex 
+ 1077  vim latexTemplate11.tex 
+ 1078  xelatex latexTemplate11.tex 
+ 1079  vim latexTemplate11.tex 
+ 1080  ls -l
+ 1081  mv latexTemplate11.tex _lateTemplate11.tex
+ 1082  rm latexTemplate11*
+ 1083  mv _latexTemplate11.tex lateTemplate11.tex
+ 1084  mv _lateTemplate11.tex latexTemplate11.tex
+ 1085  xelatex latexTemplate11.tex 
+ 1086  xelatex latexTemplate11.tex 
+ 1087  rubber -d -m xelatex latexTemplate11.tex
+ 1088  which xelatex
+ 1089  yum install texlive-latex-extra
+ 1090  which pdflatex
+ 1091  which rubber
+ 1092  ls -l
+ 1093  cd ..
+ 1094  ls -l
+ 1095  rm -rf *dir
+ 1096  cd 19918192208dir/
+ 1097  ls -l
+ 1098  vim latexTemplate11.tex 
+ 1099  which xelatex
+ 1100  vim latexTemplate11.tex 
+ 1101  cd ..
+ 1102  cd ..
+ 1103  grep rubber creaPDF_Latex.php 
+ 1104  rubber -d -m xelatex --shell-escape --into=LaTeX/19918192208dir/ LaTeX/19918192208dir/latexTemplate11.tex
+ 1105  yum update
+ 1106  yum remove texlive-*
+ 1107  which xelatex
+ 1108  vim creaPDF_Latex.php 
+ 1109  ls -l
+ 1110  more error.txt 
+ 1111  which xelatex
+ 1112  vim creaPDF_Latex.php 
+ 1113  rm -rf LaTeX/*dir
+ 1114  more error.txt 
+ 1115  cd LaTeX/19918225413dir/
+ 1116  ls -l
+ 1117  cd ..
+ 1118  ls -l
+ 1119  cd ..
+ 1120  rm -rf LaTeX/*dir
+ 1121  vim creaPDF_Latex.php 
+ 1122  ls -l LaTeX/19918225550dir/
+ 1123  more error.txt 
+ 1124  rm -rf LaTeX/*dir
+ 1125  vim creaPDF_Latex.php 
+ 1126  rm -rf LaTeX/*dir
+ 1127  ls -l LaTeX/19918225550dir/
+ 1128  ls -l LaTeX/19918225637dir/
+ 1129  ls -l LaTeX/
+ 1130  vim creaPDF_Latex.php 
+ 1131  rm -rf LaTeX/*dir
+ 1132  ls -l LaTeX/19918231247dir/
+ 1133  more error.txt 
+ 1134  vim creaPDF_Latex.php 
+ 1135  rm -rf LaTeX/*dir
+ 1136  cd LaTeX/19918231422dir/
+ 1137  ls -l
+ 1138  xelatex latexTemplate11.tex 
+ 1139  ls -l
+ 1140  cd ..
+ 1141  cd ..
+ 1142  ls -l
+ 1143  vim creaPDF_Latex.php 
+ 1144  rm -rf LaTeX/*dir
+ 1145  ls -l LaTeX/19918231634dir/
+ 1146  vim latexTemplate11.tex
+ 1147  vim LaTeX/19918231634dir/latexTemplate11.tex 
+ 1148  cd LaTeX/19918231634dir/
+ 1149  xelatex latexTemplate11.tex 
+ 1150  ls -l
+ 1151  cd ..
+ 1152  cd ..
+ 1153  vim LaTeX/templates/latexTemplate11.tex 
+ 1154  rm -rf LaTeX/*dir
+ 1155  vim creaPDF_Latex.php 
+ 1156  cd LaTeX/19918232452dir; /usr/local/texlive/2018/bin/x86_64-linux/xelatex --shell-scape -interaction=nonstopmode latexTemplate11.tex;cd..;mv LaTeX/19918232452dir/latexTemplate11.pdf LaTeX/19918232452dir/19918232452.pdf
+ 1157  cd ..
+ 1158  cd ..
+ 1159  ls -l
+ 1160  more error.txt 
+ 1161  vim creaPDF_Latex.php 
+ 1162  rm -rf LaTeX/*dir
+ 1163  vim creaPDF_Latex.php 
+ 1164  rm -rf LaTeX/*dir
+ 1165  ls -l LaTeX/19918232651dir/
+ 1166  rm -rf LaTeX/*dir
+ 1167  vim creaPDF_Latex.php 
+ 1168  rm -rf LaTeX/*dir
+ 1169  more error.txt 
+ 1170  rm -rf LaTeX/*dir
+ 1171  vim creaPDF_Latex.php 
+ 1172  more error.txt 
+ 1173  ls -l LaTeX/19918232837dir/
+ 1174  vim creaPDF_Latex.php 
+ 1175  rm -rf LaTeX/*dir
+ 1176  rm error.txt 
+ 1177  more error.txt 
+ 1178  vim LaTeX/19918233159dir/latexTemplate11.tex 
+ 1179  cd LaTeX/19918233159dir/
+ 1180  grep xelatex ../../creaPDF_Latex.php 
+ 1181  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1182  vim latexTemplate11.tex
+ 1183  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1184  vim latexTemplate11.tex
+ 1185  cat txt.txt 
+ 1186  vim latexTemplate11.tex
+ 1187  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1188  vim latexTemplate11.tex
+ 1189  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1190  vim latexTemplate11.tex
+ 1191  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1192  vim latexTemplate11.tex
+ 1193  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1194  vim latexTemplate11.tex
+ 1195  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1196  vim latexTemplate11.tex 
+ 1197  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1198  vim latexTemplate11.tex 
+ 1199  wget http://fontsgeek.com/fonts/download/Freight-Sans-Medium.zip
+ 1200  ls -l fonts
+ 1201  vim latexTemplate11.tex 
+ 1202  wget http://fontsgeek.com/fonts/download/Freight-Sans-Medium.zip
+ 1203  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1204  locate opentype
+ 1205  yum install -y locate
+ 1206  mkdir /usr/local/texlive/texmf-local/fonts/opentype
+ 1207  cp fonts/*.otf /usr/local/texlive/texmf-local/fonts/opentype/
+ 1208  ls -l /usr/local/texlive/texmf-local/fonts/opentype
+ 1209  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1210  ls -l /usr/local/texlive/texmf-local/fonts/opentype/FreightSansMedium
+ 1211  mkdir /usr/local/texlive/texmf-local/fonts/opentype/FreightSansMedium
+ 1212  mv /usr/local/texlive/texmf-local/fonts/opentype/*.otf /usr/local/texlive/texmf-local/fonts/opentype/FreightSansMedium/
+ 1213  ls -l /usr/local/texlive/texmf-local/fonts/opentype/FreightSansMedium
+ 1214  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1215  mf-nowin -progname=mf \mode:=ljfour; mag:=1; nonstopmode; input FreightSansMedium
+ 1216  mktexmf FreightSansMedium
+ 1217  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1218  mktexlsr 
+ 1219  fc-cache
+ 1220  updmap-sys --enable Map=FreightSansMedium.map
+ 1221  mktexlsr
+ 1222  fc-cache
+ 1223  updmap-sys --enable Map=FreightSansMedium.map --syncwithtrees
+ 1224  updmap-sys --enable Map=FreightSansMedium.map
+ 1225  mktexlsr
+ 1226  fc-cache
+ 1227  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1228  mkdir /usr/local/texlive/2018/texmf-dist/fonts/opentype/FreightSansMedium;cp fonts/*.otf /usr/local/texlive/2018/texmf-dist/fonts/opentype/FreightSansMedium/
+ 1229  mktexlsr
+ 1230  fc-cache
+ 1231  updmap-sys --enable Map=FreightSansMedium.map
+ 1232  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1233  vim latexTemplate11.tex 
+ 1234  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1235  mktexlsrkpsewhich --var-value=TEXMFLOCAL
+ 1236  kpsewhich --var-value=TEXMFLOCAL
+ 1237  kpsewhich --var-value=TEXMFHOME
+ 1238  pwd;cd /usr/local/texlive/2018/texmf-dist/fonts/opentype/
+ 1239  ls -l
+ 1240  mv FreightSansMedium/ fsm/
+ 1241  ls -l google/
+ 1242  ls -l google/noto/
+ 1243  ls -l fsm/
+ 1244  cd fsm/
+ 1245  mv FreightSansBlack.otf FreightSansMediumBlack.otf
+ 1246  cd ..
+ 1247  cd /var/www/html/nrb/Mapps/Conabio/reportesPDF/LaTeX/19918233159dir
+ 1248  mktexlsr
+ 1249  fc-cache
+ 1250  updmap-sys --enable Map=fsm.map
+ 1251  updmap-sys --enable Map=fsm.map --syncwithtrees
+ 1252  updmap-sys --enable Map=fsm.map
+ 1253  D
+ 1254  mktexlsr
+ 1255  fc-cache
+ 1256  updmap-sys --enable Map=fsm.map
+ 1257  vim latexTemplate11.tex 
+ 1258  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1259  ls -l /usr/local/texlive/2018/texmf-dist/fonts/
+ 1260  ls -l /usr/local/texlive/2018/texmf-dist/fonts/opentype/
+ 1261  ls -l /usr/local/texlive/2018/texmf-dist/fonts/opentype/kosch/
+ 1262  ls -l /usr/local/texlive/2018/texmf-dist/fonts/opentype/kosch/crimson/
+ 1263  ls -l /usr/local/texlive/2018/texmf-dist/fonts/opentype/novel/
+ 1264  ls -l /usr/local/texlive/2018/texmf-dist/fonts/opentype/fsm/
+ 1265  vim latexTemplate11.tex 
+ 1266  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1267  vim latexTemplate11.tex 
+ 1268  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1269  vim latexTemplate11.tex 
+ 1270  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1271  fc-list | grep "Linux Libertine" | grep ".otf" | grep 2018
+ 1272  fc-list | grep "Linux Libertine" | grep ".otf" | grep 2015
+ 1273  fc-list | grep "Linux Libertine" | grep ".otf"
+ 1274  fc-list | grep ".otf"
+ 1275  vim latexTemplate11.tex 
+ 1276  xelatex --shell-escape -interaction=nonstopmode latexTemplate11.tex
+ 1277  cd ..
+ 1278  cd templates/
+ 1279  vim latexTemplate11.tex 
+ 1280  history | tail
+ 1281  history | tail -n 30
+ 1282  updmap-sys --enable Map=fsm.map
+ 1283  mktexlsr
+ 1284  fc-list 
+ 1285  more fonts/FreightSansMedium.otf 
+ 1286  grep Freight fonts/FreightSansMedium.otf 
+ 1287  cd ..
+ 1288  ls -l
+ 1289  cd ..
+ 1290  ls -l
+ 1291  history > pasos.txt

@@ -1,0 +1,54 @@
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+.dragged {
+	position: absolute;
+	top: 0;
+	opacity: 0.5;
+	z-index: 2000;
+}
+ol.vertical {
+	margin: 0 0 9px 0;
+	min-height: 10px;
+	-webkit-padding-start: 0px;
+}
+ol.vertical li {
+	display: block;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #cccccc;
+	color: #0088cc;
+	background: #eeeeee;
+	border-radius: 8px;
+}
+ol.vertical li.placeholder {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+ol.vertical li.placeholder:before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	margin-top: -5px;
+	left: -5px;
+	top: -4px;
+	border: 5px solid transparent;
+	border-left-color: red;
+	border-right: none;
+}
+ol {
+	list-style-type: none;
+}
+ol i.icon-move {
+	cursor: pointer;
+}
+ol li.highlight {
+	background: #333333;
+    color: #999999;
+}
+ol.nested_with_switch li, ol.simple_with_animation li, ol.serialization li, ol.default li {
+	cursor: pointer;
+}
