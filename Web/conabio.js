@@ -126,7 +126,7 @@ var estadosByMunCargados = [false, false, false, false, false, false, false, fal
 							false, false, false, false, false, false, false, false, false, false,
 							false, false, false, false, false, false, false, false, false, false,
 							false, false];
-
+//comment to test GIT
 function toKML(figure, name){
 	var xw = new XMLWriter('UTF-8');
 	xw.formatting = 'indented'; //add indentation and newlines
