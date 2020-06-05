@@ -8,6 +8,7 @@ function getGeoJson(nombre, columns, geometry){
 	console.log('ft Geometry: ', geometry);
 
 	//HAcer llamada ajax a leer el archivo
+	//segundo commit de GIT
 	var file = nombre+'.geojson';
 	$.getJSON(
 		//"/utilities/getGeoJson.php", {file: file},
