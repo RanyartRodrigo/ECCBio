@@ -8,9 +8,9 @@ class Base{
   {
   $this->servidor=$a;
   $this->usr=$b;
-        #if($c=="global")$c="sicabioenergy";
   $this->name=$c;  
 	$this->db = new mysqli($a, $b, "L4n4s3!-Db", $c);
+	$acentos = $this->db->query("SET NAMES 'utf8mb4'");
      if ($this->db->connect_error)
         die('Error de Conexion ('.$this->db->connect_errno.')'.$this->db->connect_error);
   }

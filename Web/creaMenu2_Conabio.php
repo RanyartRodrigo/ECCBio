@@ -2,7 +2,9 @@
 	// ini_set('display_errors', 1);
 	// ini_set('display_startup_errors', 1);
 	// error_reporting(E_ALL);
-	include "base.php";
+	//include "base.php";
+	include "host.php"
+	include $rootApp."/Panel/base.php";
 	include "funciones.php";
 	$baseDatos = $_REQUEST['bd'];	
 	$conex=new Base("localhost","root","$baseDatos");

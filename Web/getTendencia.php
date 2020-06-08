@@ -1,5 +1,7 @@
 <?php
-	include "base.php";
+	//include "base.php";
+	include "host.php"
+	include $rootApp."/Panel/base.php";
 	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
 	$base=new Base("localhost","root","conabio3");
 	

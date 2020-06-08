@@ -1,6 +1,8 @@
 <?php
-	include "base.php";
-        header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
+	//include "base.php";
+	include "host.php"
+        include $rootApp."/Panel/base.php";
+	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
         //header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
 	#$baseDatos = $_REQUEST['bd'];
         $base=new Base("localhost","root","conabio3");	
