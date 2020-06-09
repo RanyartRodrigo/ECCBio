@@ -205,7 +205,7 @@ function fillDataEstados(variables){
 }
 
 function fillDataAux(variable,idsANP){
-	$.getJSON('/Web/getTemp2.php',{metadata:idsANP,variable:variable,idTemporada:1},function(data){		
+	$.getJSON('Web/getTemp2.php',{metadata:idsANP,variable:variable,idTemporada:1},function(data){		
 		for(var j = 0; j < data.length; j++){
 			eval("var dataT = "+data[j]);			
 			if(variable == 6){				
@@ -291,7 +291,7 @@ function fillDataAux(variable,idsANP){
 
 function fillDataAuxEstados(variable,idsANP){
 	console.log('fillData Estados: ', variable, " idsANP: ", idsANP);
-	$.getJSON('/Web/getTempEstadoFill.php',{metadata:idsANP,variable:variable,idTemporada:1},function(data){		
+	$.getJSON('Web/getTempEstadoFill.php',{metadata:idsANP,variable:variable,idTemporada:1},function(data){		
 		for(var j = 0; j < data.length; j++){
 			eval("var dataT = "+data[j]);			
 			if(variable == 2){
@@ -407,10 +407,10 @@ function envia(t,anp,p,temporada,forzamiento,modelo,flag){
 	}
 	varMeta = (p!==3)?anp:'Poligono';
 	ANPS = anp+"";
-	//var url = (p==3)?'http://www.wegp.unam.mx:8080/getclimatedata':(p==1)?'/Web/getTempE2.php':'/Web/getTemp2.php';
-	var url = (p==3)?'https://servicios.conabio.gob.mx/assets_conabio8080/getclimatedata':(p==1)?'/Web/getTempE2.php':'/Web/getTemp2.php';	
+	//var url = (p==3)?'http://www.wegp.unam.mx:8080/getclimatedata':(p==1)?'Web/getTempE2.php':'Web/getTemp2.php';
+	var url = (p==3)?'https://servicios.conabio.gob.mx/assets_conabio8080/getclimatedata':(p==1)?'Web/getTempE2.php':'Web/getTemp2.php';	
 	if(p == 5){
-		var url = '/Web/getTempMun.php';
+		var url = 'Web/getTempMun.php';
 	}
 	images = [];
 	if(p == 3){
@@ -2523,7 +2523,7 @@ function exportaDatos(i){
 				var realIndex = parseInt(dictIndex[idANP+'']);
 				//valores de la tabla
 				$.ajax({
-					url:'/Web/getProtConnReporte.php',
+					url:'Web/getProtConnReporte.php',
 					type:'POST',
 					data:{idANP: realIndex},
 					dataType: 'json',
@@ -2543,7 +2543,7 @@ function exportaDatos(i){
 				});
 				//nombre de ecoregiones
 				$.ajax({
-					url:'/Web/getEcoregion.php',
+					url:'Web/getEcoregion.php',
 					type:'POST',
 					data:{idANP: realIndex},
 					dataType: 'json',
@@ -2640,7 +2640,7 @@ function exportaDatos(i){
 	if(type == 0){
 		setTimeout(function(){$.ajax({
 			//url: '/admin/Conabio2/reportesPDF/creaPDF_Latex.php',
-			url: '/Web/reportesPDF/creaPDF_Latex.php',
+			url: 'Web/reportesPDF/creaPDF_Latex.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2, prec: precc, tmax: tmax,
 					tmin: tmin, type: type, idTitulos: idTitulos, fecha: fecha, 
@@ -2668,7 +2668,7 @@ function exportaDatos(i){
 	else if(type == 1){
 		setTimeout(function(){$.ajax({
 			//url: '/admin/Conabio2/reportesPDF/creaPDF_LatexEnt.php',
-			url: '/Web/reportesPDF/creaPDF_LatexEnt.php',
+			url: 'Web/reportesPDF/creaPDF_LatexEnt.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2, prec: precc, tmax: tmax,
 					tmin: tmin, type: type, idTitulos: idTitulos, fecha: fecha, 
@@ -2691,7 +2691,7 @@ function exportaDatos(i){
 	else if(type == 5){
 		setTimeout(function(){$.ajax({
 			//url: '/admin/Conabio2/reportesPDF/creaPDF_LatexMun.php',
-			url: '/Web/reportesPDF/creaPDF_LatexMun.php',
+			url: 'Web/reportesPDF/creaPDF_LatexMun.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2,
 					type: type, idTitulos: idTitulos, fecha: fecha, 
@@ -2952,7 +2952,7 @@ function storeDataFQ2(data){
 function getNames(nombreT,columns,ordenar,key,storeFunction){
 	//Leer json en lugar de las FT
 	$.getJSON(
-		"/Web/getGeoJson.php", {file: 'anpNames.json'},                
+		"Web/getGeoJson.php", {file: 'anpNames.json'},                
 		function(data){
 			var json = JSON.parse(data);
 			nombresANPJSON.push(json['rows']);	
@@ -2961,8 +2961,8 @@ function getNames(nombreT,columns,ordenar,key,storeFunction){
 	);
 
 	$.getJSON(
-		//"/Web/getGeoJson.php", {file: 'json/municipiosSimplificados.geojson'},
-		"/Web/getGeoJson.php", {file: 'munAcentos.geojson'},
+		//"Web/getGeoJson.php", {file: 'json/municipiosSimplificados.geojson'},
+		"Web/getGeoJson.php", {file: 'munAcentos.geojson'},
 		function(data){
 			var json = JSON.parse(data);
 			console.log('datos municipios: ', json['features']);
@@ -3203,10 +3203,10 @@ function loadConabioStuffs(){
 			{ style:'gmBox-table-head',tipo:"span",pos:'a1',texto:"Clima actual", colspan:3},
 			{ style:'gmBox-table-head',tipo:"span",pos:'d1',texto:"Clima a futuro", colspan:4},
 			{ style:'gmBox-table-head',tipo:"span",pos:'h1',texto:"Conectividad", colspan:4},
-			{ style:'halign-center inverted',tipo:"img",pos:'e2',src:'/Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",rowspan:4,colspan:3,onclick:"usar",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
-			{ style:'halign-center inverted',tipo:"img",pos:'i2',src:'/Web/icons/noun_conectividad_gris_alpha.png',width:"80px",rowspan:4,colspan:3,onclick:"usar2",parametros:'0',cursor:"pointer",title:"Conectividad"},
-			{ style:'halign-center valign-middle',tipo:"img",pos:'a2',src:'/Web/icons/icon-thermometer.svg',rowspan:3,width:"30px"},
-			{ style:'halign-center valign-middle',tipo:"img",pos:'a5',src:'/Web/icons/icon-drop.svg',width:"30px",rowspan:1},
+			{ style:'halign-center inverted',tipo:"img",pos:'e2',src:'Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",rowspan:4,colspan:3,onclick:"usar",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
+			{ style:'halign-center inverted',tipo:"img",pos:'i2',src:'Web/icons/noun_conectividad_gris_alpha.png',width:"80px",rowspan:4,colspan:3,onclick:"usar2",parametros:'0',cursor:"pointer",title:"Conectividad"},
+			{ style:'halign-center valign-middle',tipo:"img",pos:'a2',src:'Web/icons/icon-thermometer.svg',rowspan:3,width:"30px"},
+			{ style:'halign-center valign-middle',tipo:"img",pos:'a5',src:'Web/icons/icon-drop.svg',width:"30px",rowspan:1},
 			{ style:'valign-middle',tipo:'span',pos:'b2',texto:"media: |0 °C",getExtra:media2, colspan:2},
 			{ style:'valign-middle',tipo:'span',pos:'b3',texto:"máxima: |0 °C",getExtra:maxima2, colspan:2},
 			{ style:'valign-middle',tipo:'span',pos:'b4',texto:"mínima: |0 °C",getExtra: minima2, colspan:2},
@@ -3223,8 +3223,8 @@ function loadConabioStuffs(){
 			{ style:'gmBox-table-head',tipo:"span",pos:'a1',texto:"Clima al presente", colspan:3},
 			{ style:'gmBox-table-head',tipo:"span",pos:'d1',texto:"Clima al futuro", colspan:3},
 			{ style:'gmBox-table-head',tipo:"span",pos:'g1',texto:"Conectividad", colspan:3},
-			{ style:'halign-center grayscale',tipo:"img",pos:'d2',src:'/Web/icons/noun_climafuturo_color.png',width:"80px",rowspan:4,colspan:3,onclick:"usar",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
-			{ style:'halign-center grayscale',tipo:"img",pos:'g2',src:'/Web/icons/noun_conectividad_gris.png',width:"80px",rowspan:4,colspan:3,onclick:"usar2",parametros:'0',cursor:"pointer",title:"Conectividad"},
+			{ style:'halign-center grayscale',tipo:"img",pos:'d2',src:'Web/icons/noun_climafuturo_color.png',width:"80px",rowspan:4,colspan:3,onclick:"usar",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
+			{ style:'halign-center grayscale',tipo:"img",pos:'g2',src:'Web/icons/noun_conectividad_gris.png',width:"80px",rowspan:4,colspan:3,onclick:"usar2",parametros:'0',cursor:"pointer",title:"Conectividad"},
 			{ style:'halign-center valign-middle',tipo:"img",pos:'a2',src:'/assets_conabio/icons/icon-thermometer.svg',rowspan:3,width:"30px"},
 			{ style:'halign-center valign-middle',tipo:"img",pos:'a5',src:'/assets_conabio/icons/icon-drop.svg',width:"30px",rowspan:1},
 			{ style:'valign-middle',tipo:'span',pos:'b2',texto:"media: |0 °C",getExtra:media, colspan:2},
@@ -4049,7 +4049,7 @@ function actualizaDatos(nombre, unidad, idCapa){
 		}
 	});
 	$.ajax({
-		url : '/Web/obtenDescripcion.php',
+		url : 'Web/obtenDescripcion.php',
 		dataType : 'json',
 		data: {			
 			idCapa: idCapa,
@@ -4065,7 +4065,7 @@ function actualizaDatos2(unidad, idCapa,leyenda){
 	$("#datos"+idCapa).find('.unidad').html(unidad);
 	$("#leyenda"+idCapa).find('.leyenda').html(leyenda.replaceAll(" ","&nbsp;"));	
 	$.ajax({
-		url : '/Web/obtenEstilos.php',
+		url : 'Web/obtenEstilos.php',
 		dataType : 'json',
 		data: {			
 			idCapa: idCapa,
@@ -4421,8 +4421,8 @@ function cargarEntidades(){
 		cuerpo:[
 			{ style:'gmBox-table-title',tipo:"span",pos:'a0',texto:"|1"},
 			{ style:'gmBox-table-head',tipo:"span",pos:'a1',texto:"Clima a futuro",onclick:"usarEnt",parametros:'0',cursor:"pointer"},
-			//{ style:'halign-center grayscale',tipo:"img",pos:'a2',src:'/Web/icons/noun_climafuturo_gris_alpha.png',width:"120px",onclick:"usarEnt",parametros:'0',cursor:"pointer",title:"Graficar"},
-			{ style:'halign-center inverted',tipo:"img",pos:'a2',src:'/Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",rowspan:1,colspan:1,onclick:"usarEnt",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
+			//{ style:'halign-center grayscale',tipo:"img",pos:'a2',src:'Web/icons/noun_climafuturo_gris_alpha.png',width:"120px",onclick:"usarEnt",parametros:'0',cursor:"pointer",title:"Graficar"},
+			{ style:'halign-center inverted',tipo:"img",pos:'a2',src:'Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",rowspan:1,colspan:1,onclick:"usarEnt",parametros:'0',cursor:"pointer",title:"Clima al futuro"},
 		]
 	}];
 	createFusionTM(plantillaEnt);
@@ -4466,7 +4466,7 @@ function cargarMunicipios(){
 		cuerpo:[
 			{ style:'gmBox-table-title2',tipo:"span",pos:'a0',texto:"|1"},
 			{ style:'gmBox-table-head2',tipo:"span",pos:'a1',texto:"Clima a futuro",onclick:"usarMun",parametros:'0,2',cursor:"pointer"},
-			{ style:'halign-center grayscale',tipo:"img",pos:'a2',src:'/Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",onclick:"usarMun",parametros:'0,2',cursor:"pointer",title:"Graficar"},
+			{ style:'halign-center grayscale',tipo:"img",pos:'a2',src:'Web/icons/noun_climafuturo_gris_alpha.png',width:"80px",onclick:"usarMun",parametros:'0,2',cursor:"pointer",title:"Graficar"},
 		]
 	}];
 	createFusionTM(plantillaMun);
