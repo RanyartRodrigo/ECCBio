@@ -1,3 +1,6 @@
+<?php
+	include "jsvars.php";
+?>
 <!DOCTYPE html>
 <!--html class="wf-freightsanspro-n4-active wf-freightsanspro-i4-active wf-freightsanspro-n7-active wf-freightsanspro-i7-active wf-freightsanspro-n9-active wf-freightsanspro-i9-active wf-acuminproextracondensed-n7-active wf-acuminproextracondensed-i7-active wf-acuminproextracondensed-n4-active wf-acuminproextracondensed-i4-active wf-active fa-events-icons-ready" style="height: 100%;"-->
 <html style="height: 100%;">
@@ -11,9 +14,9 @@
 		</style>		
 		<script>
 			var versionScripts = "debug";
-			var home="conabio3";
+			var home="<?php echo($home); ?>";
 			var idPaisGlobal=1;
-			var idPais=1;
+			var idPais=<?php echo($idPais); ?>;
 			var mapa="Mexico";
 			var paisT = "None";
 			var colpaiId = "None";
@@ -29,7 +32,7 @@
 			var maxZoom=15;
 			var lat=23.24;
 			var lng=-102.08;
-			var key="AIzaSyDqra8J1Lim9w7fyULtxg5ZlGDa4LNesC0";
+			var key="<?php echo($key); ?>";
 			var layerPai = null;
 			var layerEnt = null;
 			var layerMun = null;
@@ -59,7 +62,7 @@
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script src="Web/menuPlay.js"></script>
 		<script src="Web/estilos.js"></script>
-		<script src="https://maps.google.com/maps/api/js?v=3.34&key=<?php echo $key;?>&libraries=drawing,places,geometry"></script>
+		<script src="https://maps.google.com/maps/api/js?v=3.34&key=<?php echo($key); ?>&libraries=drawing,places,geometry"></script>
 		<!-- <script src="/static/{{ version }}/shortcut.js"></script> -->
 		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 		<!-- -------------------- -->
