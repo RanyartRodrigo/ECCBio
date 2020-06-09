@@ -11,7 +11,7 @@ $name=["GPS","District","District Code","Traditional Authority","Traditional Aut
 fputcsv($output, $name);
 
 // fetch the data
-mysql_connect('localhost', 'root', 'L4n4s3!-Db');
+mysql_connect('localhost', 'root', "dbPASWD");
 mysql_select_db('malawiTest');
 $rows = mysql_query('SELECT * FROM identification');
 
