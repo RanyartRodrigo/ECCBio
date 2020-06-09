@@ -1,0 +1,6 @@
+<?php
+	//tal y como esta definido en el README, se definen estas variables para establecer la BD
+	$home='db_nombre';
+	$idPais = '1';
+	$key='AaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA';
+?>
