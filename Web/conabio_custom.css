@@ -2114,33 +2114,33 @@ p {
 }
 
 .mexico {
-	background: url(/assets_conabio2/mexico.png);
+	background: url(mexico.png);
 	background-size: 20px 20px;
 }
 
 .mexicoLupa {
-    background: url(/assets_conabio2/mexicoLupa.png);
+    background: url(mexicoLupa.png);
     background-size: 20px 20px;
 }
 
 .regla {
     /*background: url(/assets_conabio2/img/regla.png);*/
-    background: url(/assets_conabio2/rule.png);
+    background: url(rule.png);
     background-size: 22px 22px;
 }
 
 .cuadroLupa {
-    background: url(/assets_conabio2/cuadroLupa.png);
+    background: url(cuadroLupa.png);
     background-size: 20px 20px;
 }
 
 .engrane {
-    background: url(/assets_conabio2/engrane.png);
+    background: url(engrane.png);
     background-size: 20px 20px;
 }
 
 .cuadros {
-    background: url(/assets_conabio2/cuadros.png);
+    background: url(cuadros.png);
     background-size: 20px 20px;
 }
 

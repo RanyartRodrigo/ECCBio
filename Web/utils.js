@@ -12,7 +12,7 @@ function getGeoJson(nombre, columns, geometry){
 	var file = nombre+'.geojson';
 	$.getJSON(
 		//"/utilities/getGeoJson.php", {file: file},
-		"/assets_conabio2/getGeoJson.php", {file: file},                
+		"Web/getGeoJson.php", {file: file},                
 		function(data){
 			var json = JSON.parse(data);
 			console.log('datos originales: ', json);
