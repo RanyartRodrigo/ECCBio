@@ -12,19 +12,19 @@
 		public $name="mofuss";
 		public $usr="usuario";
 		public $servidor="localhost";
-		public $passwd = "dbPASWD";
+		public $passwd = "L4n4s3!-Db";
 		public function __construct($a,$b,$c)
 		{
 			$this->servidor=$a;
 			$this->usr=$b;
-			if($c=='global') $c="conabio";
+			if($c=='global') $c="conabio3";
 			$this->name=$c;
 			$this->db = new mysqli($a, $b, $this->passwd, $c);
 			if ($this->db->connect_error)
 				die('Error de Conexion ('.$this->db->connect_errno.')'.$this->db->connect_error);
 		}
 		public function setBase($nombre){
-			if($nombre=='global') $nombre="conabio";
+			if($nombre=='global') $nombre="conabio3";
 			$this->db = new mysqli($this->servidor, $this->usr, $this->passwd, $nombre);
 			if ($this->db->connect_error)
 				die('Error de Conexion ('.$this->db->connect_errno.')'.$this->db->connect_error);

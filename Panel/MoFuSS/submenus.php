@@ -9,7 +9,7 @@ $pais="where ";
 $paisid="";
 }
  include '../base.php';
-  $obj=new Base("localhost","root","conabio");
+  $obj=new Base("localhost","root","conabio3");
 if(isset($_POST['id'])){
                         if($_POST['id']!=""){
                              $result = $obj->consulta("SELECT * FROM submenus where id=".$_POST['id']);

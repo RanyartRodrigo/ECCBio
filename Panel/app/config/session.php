@@ -63,5 +63,5 @@ return array(
 	|--------------------------------------------------------------------------
 	*/
 
-	'domain' => 'http://www.wegp.unam.mx/admin/Conabio2/',
+	'domain' => 'http://localhost/eccbio/',
 );

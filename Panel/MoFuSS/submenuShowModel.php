@@ -1,6 +1,6 @@
   <?php
 include "../base.php";
-$obj=new Base("localhost","root","conabio");
+$obj=new Base("localhost","root","conabio3");
 switch ($_POST['opcion']) {
 	case 0:
 		Eliminar($obj);

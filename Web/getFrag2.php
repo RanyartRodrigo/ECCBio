@@ -1,7 +1,8 @@
 <?php
+	//include "base.php";
 	include "../Panel/base.php";
 	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
-	$base=new Base("localhost","ggonzalez","conabio3");
+	$base=new Base("localhost","root","conabio3");
 	
 	$idANP = $_REQUEST['idANP'];
 	

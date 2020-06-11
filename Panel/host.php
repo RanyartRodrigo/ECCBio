@@ -1,6 +1,6 @@
 <?php
 	//Host apunto hacia la carpeta raiz del panel
-	$host="http://www.wegp.unam.mx/admin/Conabio2/Panel";
+	$host="http://localhost/eccbio/Panel";
 	//appRoot apunta hacia la raiz del proyecto
-	$appRoot="https://";
+	$appRoot="http://localhost/eccbio";
 ?>

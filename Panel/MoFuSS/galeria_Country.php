@@ -40,7 +40,7 @@
 <p class="titleGaleria">Logos Disponibles</p>
   <?php
  include '../base.php';
-                            $obj=new Base("localhost","root","conabio");
+                            $obj=new Base("localhost","root","conabio3");
 
                              $result = $obj->consulta("SELECT * FROM galeria_paises where idPais=".$_POST['id']." and tipo=1 order by nombre");
     $numfilas = $result->num_rows;

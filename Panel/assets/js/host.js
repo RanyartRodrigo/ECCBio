@@ -1,2 +1,2 @@
 
-var host="http://www.wegp.unam.mx/admin/Conabio2/";
+var host="http://localhost/eccbio/Panel/";

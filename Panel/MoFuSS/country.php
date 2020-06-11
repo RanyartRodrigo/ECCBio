@@ -2,7 +2,7 @@
 
 if(isset($_POST['id'])){
  include '../base.php';
-                            $obj=new Base("localhost","root","conabio");
+                            $obj=new Base("localhost","root","conabio3");
                              $result = $obj->consulta( "SELECT * FROM paises where id_Pais=".$_POST['id']);
 
   $numfilas = $result->num_rows;

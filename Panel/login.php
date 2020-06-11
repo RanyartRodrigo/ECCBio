@@ -1,3 +1,3 @@
 <?php
-header('Location: http://www.wegp.unam.mx/admin/Conabio2/admin.php');
+header('Location: http://localhost/eccbio/panel/admin.php');
 ?>
