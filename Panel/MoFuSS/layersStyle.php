@@ -3,7 +3,8 @@
 
 if(isset($_POST['id'])){
  include '../base.php';
-                            $obj=new Base("localhost","root","conabio3");
+ include '../host2.php';
+                            $obj=new Base("localhost",$DB_user,$DB_name);
                              $result = $obj->consulta( "SELECT * FROM submenusEstilo where nombre='".$_POST['id']."'");
   $numfilas = $result->num_rows;
 	if($numfilas==1){

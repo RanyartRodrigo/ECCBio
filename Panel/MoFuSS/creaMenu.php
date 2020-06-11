@@ -2,8 +2,9 @@
 	/*ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);*/
-	include "../base.php";	
-	$conex=new Base("localhost","root","conabio3");
+	include "../base.php";
+	include '../host2.php';
+	$conex=new Base("localhost",$DB_user,$DB_name);
 	echo capas($conex);
 	
 	function limpia($text){

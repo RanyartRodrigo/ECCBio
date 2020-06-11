@@ -1,14 +1,6 @@
-
-var host="http://www.wegp.unam.mx/admin/Global/";
+var host="http://localhost/eccbio/Panel/";
 function menu(opc){	
-	host="http://www.wegp.unam.mx/admin/Global/";
-	if(home=="conabio3")
-		host="http://localhost/eccbio/Panel/";
-	if(home=="cemie")
-		host="http://www.wegp.unam.mx/admin/Cemie/";
-	if(home=="sicabioenergy")
-		host="http://www.wegp.unam.mx/admin/SicaBioenergy/";
-	
+	host="http://localhost/eccbio/Panel/";
 	$("head").append('<script src="'+host+'assets/js/jquery-1.11.1.min.js"></script>');
 	$("head").append('<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">');
 	$("head").append('<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>');

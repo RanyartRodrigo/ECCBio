@@ -1,21 +1,22 @@
  
-                                   <?php
+<?php
 
-if(isset($_POST['id'])){
- include '../base.php';
-                            $obj=new Base("localhost","root","conabio3");
-                             $result = $obj->consulta("SELECT * FROM migracion where id=".$_POST['id']);
-  $numfilas = $result->num_rows;
-  $fila = $result->fetch_object();
-  $edit=$fila;
-   }
+  if(isset($_POST['id'])){
+    include '../base.php';
+    include "../host2.php";
+    $obj=new Base("localhost",$DB_user,$DB_name);
+    $result = $obj->consulta("SELECT * FROM migracion where id=".$_POST['id']);
+    $numfilas = $result->num_rows;
+    $fila = $result->fetch_object();
+    $edit=$fila;
+  }
 
 
 
 
-echo '<div><div class="form-group">';
- if(isset($edit->titulo)) echo '<h4>"'.$edit->titulo.'" edit:</h4>'; else echo '<h4>Nuevo</h4>';
-   ?>
+  echo '<div><div class="form-group">';
+  if(isset($edit->titulo)) echo '<h4>"'.$edit->titulo.'" edit:</h4>'; else echo '<h4>Nuevo</h4>';
+?>
  </div>
                     <input type="text" name="id" id="id" value="<?php if(isset($edit->id)) echo $edit->id?>" class="form-control hidden">
 

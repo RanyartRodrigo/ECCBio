@@ -1,6 +1,8 @@
 <?php
 header('content-type:text/css');
 include "../../base.php";
+include "../../host2.php";
+
 $obj=new Base("localhost","root","global");
 $result =$obj->consulta("SELECT color FROM colores");
 $numfilas = $result->num_rows;

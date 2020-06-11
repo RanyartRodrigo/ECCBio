@@ -1,22 +1,24 @@
  
-                                   <?php
-if(isset($_POST['pais'])) {
-	$pais="where id_Pais=".$_POST['pais']." and ";
+ <?php
+  if(isset($_POST['pais'])) {
+	 $pais="where id_Pais=".$_POST['pais']." and ";
 
-$paisid=$_POST['pais'];
-}else{
-$pais="where ";
-$paisid="";
-}
- include '../base.php';
-  $obj=new Base("localhost","root","conabio3");
-if(isset($_POST['id'])){
-                        if($_POST['id']!=""){
-                             $result = $obj->consulta("SELECT * FROM submenus where id=".$_POST['id']);
+    $paisid=$_POST['pais'];
+  }else{
+    $pais="where ";
+    $paisid="";
+  }
+  include '../base.php';
+  include '../host2.php';
 
-  $numfilas = $result->num_rows;
-  $fila = $result->fetch_object();
-  $edit=$fila;
+  $obj=new Base("localhost",$DB_user,$DB_name);
+  if(isset($_POST['id'])){
+    if($_POST['id']!=""){
+    $result = $obj->consulta("SELECT * FROM submenus where id=".$_POST['id']);
+
+    $numfilas = $result->num_rows;
+    $fila = $result->fetch_object();
+    $edit=$fila;
 }
 
    }
