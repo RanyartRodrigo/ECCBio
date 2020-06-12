@@ -1,3 +1,3 @@
 <?php
-header('Location: http://localhost/eccbio/panel/admin.php');
+header('Location: http://localhost/eccbio/Panel/admin.php');
 ?>

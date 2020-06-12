@@ -1,6 +1,7 @@
-                                   <?php
- include '../base.php';
-                            $obj=new Base("localhost","root","global");
+ <?php
+ 	include '../base.php';
+	include '../host2.php';
+         $obj=new Base("localhost",$DB_user,$DB_name);
 if(isset($_POST['id'])){
 
                              $result = $obj->consulta( "SELECT * FROM panel where idPanel=".$_POST['id']);

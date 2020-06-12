@@ -20,7 +20,8 @@ function Prioridad()
         $id=intval($_POST['id']);
  $val=intval($_POST['valor']);
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $result=$obj->consulta("select prioridad from panel where idPanel=".$id);
      for ($x=0;$x<1;$x++) {
         $fila = $result->fetch_object();
@@ -73,7 +74,8 @@ function Modificar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("update panel set nombre='".$_POST['nombre']."', submenu='".$_POST['submenu']."', icono='".$_POST['icono']."', funcion='".$_POST['funcion']."', descripcion='".$_POST['descripcion']."' where idPanel=".$id);
  $jsondata = array();
  $jsondata["success"] = true;
@@ -88,7 +90,8 @@ function Eliminar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
  $result=$obj->consulta("select prioridad from panel where idPanel= ".$id);
      for ($x=0;$x<1;$x++) {
         $fila = $result->fetch_object();
@@ -106,7 +109,8 @@ function Agregar()
 {
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $result=$obj->consulta("select prioridad from panel order by prioridad DESC limit 1");
      for ($x=0;$x<1;$x++) {
         $fila = $result->fetch_object();
