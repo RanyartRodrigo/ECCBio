@@ -2,7 +2,8 @@
 
 
 include "../base.php";
-$obj=new Base("localhost","root","conabio");
+include '../base.php';
+$obj=new Base("localhost",$DB_user,$DB_name);
 switch ($_POST['opcion']) {
 	case 0:
 		Eliminar($obj);

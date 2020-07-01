@@ -1,6 +1,7 @@
 <?php
 include '../base.php';
-$obj=new Base("localhost","root","conabio3");
+include '../host2.php';
+$obj=new Base("localhost",$DB_user,$DB_name);
 if(isset($_POST["filtro"])){
         echo "<button id='filtroButton'>Buscar</button><input id='filtro' type='text' placeholder='Buscar' value='".$_POST["filtro"]."'>";
 	$filtro=$_POST["filtro"];
@@ -47,8 +48,8 @@ $obj->setBase("wegpComun");
   }
 
     if("layers"==$lista){
-		//$result = $obj->consulta( "SELECT id_Capa as id,concat(c.nombre,' | parte de [',s.nombre,']') as a FROM conabio3.menus2 c, conabio3.subMenus s WHERE id_Pais=1 and  nombre LIKE '%".$filtro."%'  and c.idSubmenu = s.idSubmenu order by id_Pais ASC, nombre ASC LIMIT ".$nl.", 10");
-		//$nresult = $obj->consulta( "SELECT id_Capa as id,concat(c.nombre,' | parte de [',s.nombre,']') as a FROM conabio3.menus2 c, conabio3.subMenus s WHERE id_Pais=1 and  nombre LIKE '%".$filtro."%'  and c.idSubmenu = s.idSubmenu order by id_Pais  ASC");
+		//$result = $obj->consulta( "SELECT id_Capa as id,concat(c.nombre,' | parte de [',s.nombre,']') as a FROM $DB_name.menus2 c, $DB_name.subMenus s WHERE id_Pais=1 and  nombre LIKE '%".$filtro."%'  and c.idSubmenu = s.idSubmenu order by id_Pais ASC, nombre ASC LIMIT ".$nl.", 10");
+		//$nresult = $obj->consulta( "SELECT id_Capa as id,concat(c.nombre,' | parte de [',s.nombre,']') as a FROM $DB_name.menus2 c, $DB_name.subMenus s WHERE id_Pais=1 and  nombre LIKE '%".$filtro."%'  and c.idSubmenu = s.idSubmenu order by id_Pais  ASC");
 	}
    if("layersStyle"==$lista){
     $result = $obj->consulta( "SELECT subMenu as id,subMenu as a FROM menus WHERE ".$pais."  nombre LIKE '%".$filtro."%' group by subMenu order by id_Pais ASC, nombre ASC, subMenu ASC LIMIT ".$nl.", 10");
@@ -57,8 +58,8 @@ $obj->setBase("wegpComun");
   }
     if("columns"==$lista){
 		$pais = "";
-    $result = $obj->consulta( "SELECT idColumna as id,titulo as a FROM conabio3.columnas WHERE ".$pais."  titulo LIKE '%".$filtro."%'  order by titulo ASC LIMIT ".$nl.", 10");
-    $nresult = $obj->consulta( "SELECT columna as a FROM conabio3.columnas  WHERE ".$pais."  titulo LIKE '%".$filtro."%' order by idColumna ASC");
+    $result = $obj->consulta( "SELECT idColumna as id,titulo as a FROM $DB_name.columnas WHERE ".$pais."  titulo LIKE '%".$filtro."%'  order by titulo ASC LIMIT ".$nl.", 10");
+    $nresult = $obj->consulta( "SELECT columna as a FROM $DB_name.columnas  WHERE ".$pais."  titulo LIKE '%".$filtro."%' order by idColumna ASC");
 
   }
 

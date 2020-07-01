@@ -1,6 +1,7 @@
 <?php
-                                    include '../base.php';
-                            $obj=new Base("localhost","root","global");
+  include '../base.php';
+  include "../host2.php";
+  $obj=new Base("localhost",$DB_user,$DB_name);
         $result = $obj->consulta( "SELECT sub,subMenu,nombre,id_Capa as id,concat('<i class=\'fa fa-arrow-circle-o-down menosP\' onClick=\'PrioridadL(',id_Capa,',+1)\'></i><i class=\'fa fa-arrow-circle-o-up masP\' onClick=\'PrioridadL(',id_Capa,',-1)\'></i>') as a FROM menus where id_Pais=".$_POST["pais"]." order by prioridad ASC");  
   $numfilas = $result->num_rows;
   $subList=array();

@@ -1,38 +1,34 @@
-
-var host="http://www.wegp.unam.mx/admin/Global/";
+var host="http://localhost/eccbio/Panel/";
 function menu(opc){	
-host="http://www.wegp.unam.mx/admin/Global/";
-if(home=="conabio")host="http://www.wegp.unam.mx/admin/Conabio2/";
-if(home=="cemie")host="http://www.wegp.unam.mx/admin/Cemie/";
-if(home=="sicabioenergy")host="http://www.wegp.unam.mx/admin/SicaBioenergy/";
+	host="http://localhost/eccbio/Panel/";
 	$("head").append('<script src="'+host+'assets/js/jquery-1.11.1.min.js"></script>');
 	$("head").append('<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">');
 	$("head").append('<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>');
         $("head").append('<script src="'+host+'assets/js/jquery.mobile.custom.js"></script>');
-$("head").append('  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">');
-//$("head").append('  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>');
-$("head").append('<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>');
+	$("head").append('  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">');
+	//$("head").append('  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>');
+	$("head").append('<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>');
         $("head").append('<script src="http://www.wegp.unam.mx/admin/Global/assets/js/funcionesMapa.js"></script>');
         $("head").append('<script src="'+host+'assets/js/html2canvas.js"></script>');
 
 
-$(".navbar-header > a").remove();
-if (typeof home != 'undefined')
-$("#MenuPrincipal").append("<a href='http://www.wegp.unam.mx/"+home+"'><i class='fa fa-home home-menu' id='/' title='"+home+"'></i></a>");
-else
-$("#MenuPrincipal").append("<i class='fa fa-home home-menu' onclick=\'cargarContenido(this.id,this.title)\' id='/' title='Home'></i>");
-$("<div id='restaCapas' class='operaciones'></div>").insertAfter("#banner");
-$("<div id='interseccionCapas' class='operaciones'></div>").insertAfter("#banner");
-$("<div id='cover'></div>").insertAfter("#banner");
-$("<p id='beta'>Beta</p>").insertAfter("#MenuPrincipal");
-if (typeof mapa == 'undefined'){
-$("#MenuPrincipal").remove();
-$("#menu").remove();
-$("footer").remove();
-$("#beta").remove();
-setTimeout(function(){$("#cortina").remove();},1000);
+	$(".navbar-header > a").remove();
+	if (typeof home != 'undefined')
+		$("#MenuPrincipal").append("<a href='http://www.wegp.unam.mx/"+home+"'><i class='fa fa-home home-menu' id='/' title='"+home+"'></i></a>");
+	else
+		$("#MenuPrincipal").append("<i class='fa fa-home home-menu' onclick=\'cargarContenido(this.id,this.title)\' id='/' title='Home'></i>");
+	$("<div id='restaCapas' class='operaciones'></div>").insertAfter("#banner");
+	$("<div id='interseccionCapas' class='operaciones'></div>").insertAfter("#banner");
+	$("<div id='cover'></div>").insertAfter("#banner");
+	$("<p id='beta'>Beta</p>").insertAfter("#MenuPrincipal");
+	if (typeof mapa == 'undefined'){
+		$("#MenuPrincipal").remove();
+		$("#menu").remove();
+		$("footer").remove();
+		$("#beta").remove();
+		setTimeout(function(){$("#cortina").remove();},1000);
 
-}
+	}
 
 $("#banner").after("<div id='panelDesign' style='display:none'></div>");
 var efectos=["brightness", "contrast","grayscale","invert","saturate"];

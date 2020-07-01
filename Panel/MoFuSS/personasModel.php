@@ -22,7 +22,8 @@ function Prioridad()
         $id=intval($_POST['id']);
  $val=intval($_POST['valor']);
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $result=$obj->consulta("select prioridad from personas where id=".$id);
      for ($x=0;$x<1;$x++) {
         $fila = $result->fetch_object();
@@ -77,7 +78,8 @@ $flag=preg_match('\d',$id);
 if(count($flag)>0){
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 if($_POST['graduado']=="true")
 $graduado=1;
 else
@@ -100,7 +102,8 @@ $flag=preg_match('\d',$id);
 if(count($flag)>0){
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
  $result=$obj->consulta("select prioridad from personas where id= ".$id);
      for ($x=0;$x<1;$x++) {
         $fila = $result->fetch_object();
@@ -119,7 +122,8 @@ function Agregar()
 {
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 if($_POST['graduado']=="true")
 $graduado=1;
 else
@@ -152,7 +156,8 @@ $target_path = $target_path . $_POST['id'].'.'.pathinfo($_FILES['img']['name'], 
 move_uploaded_file($_FILES['img']['tmp_name'], 
     $target_path); 
      include "../base.php";
-$obj=new Base("localhost","root","global");
+     include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("update personas set img='".$_POST['id'].'.'.pathinfo($_FILES['img']['name'], PATHINFO_EXTENSION)."' where id=".$_POST['id']);
 
    }

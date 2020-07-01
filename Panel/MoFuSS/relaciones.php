@@ -3,7 +3,8 @@
 
 <?php
  include '../base.php';
-                            $obj=new Base("localhost","root","global");
+ include "../host2.php";
+  $obj=new Base("localhost",$DB_user,$DB_name);
 
 ?>                               
 

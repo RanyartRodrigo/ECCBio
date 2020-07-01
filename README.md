@@ -2,8 +2,6 @@
 
 ## Información relevante acerca de la implementación:
 
-- **php-mcrypt** Se requiere esta extensión para el panel de administración.
-
 - **jsvars.php** (Definir aquí las siguientes variables, este archivo es incluido en index.php, utilizar jsvars.php.example como base)
 	- home: establecer aquí el nombre de la base de datos MySQL con la que se importaron los datos.
 	- idPais: 1 para México (constante)
@@ -13,3 +11,13 @@
 - **Panel/base.php** (Definir aquí los datos para la conexión a la BD utilizar Panel/base.php.example como base)
 
 - **Panel/host.php** (Definir aquí la url donde habitará el Explorador, utilizar Panel/host.php.example como base)
+
+- **Panel/host2.php** (Definir usario y nombde de la base de datos para que el panel haga conexión con la bas de datos)
+
+- **Panel/app** (Ruta general del Panel de administración)
+
+- **Panel/app/config/dabase.php** (Info de la base de datos)
+
+- **Panel/app/views/admin/login.php** (Establecer la ruta absoluta raiz del panel ej: localhost/eccbio/Panel)
+
+- **Panel/app/config/app.php** (Establecer la ruta relativa raíz del panel ej: ../Panel/)

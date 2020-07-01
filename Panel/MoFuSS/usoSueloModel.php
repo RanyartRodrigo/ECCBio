@@ -17,7 +17,8 @@ function Modificar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("update usoSuelo set categoria=".$_POST['categoria'].", idPais=".$_POST['pais'].", descripcion='".$_POST['descripcion']."' where idUsoSuelo=".$id);
  $jsondata = array();
  $jsondata["success"] = true;
@@ -32,7 +33,8 @@ function Eliminar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("delete from usoSuelo where idUsoSuelo=".$id);
 
  $jsondata = array();
@@ -44,7 +46,8 @@ function Agregar()
 {
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("insert into usoSuelo (categoria, idPais, descripcion) values (".$_POST['categoria'].", ".$_POST['pais'].", '".$_POST['descripcion']."')");
 
 $result=$obj->consulta("select idUsoSuelo from usoSuelo where categoria=".$_POST['categoria']." and descripcion='".$_POST['descripcion']."' and idPais=".$_POST['pais']);

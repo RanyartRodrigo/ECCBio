@@ -40,9 +40,9 @@
 <p class="titleGaleria">Logos Disponibles</p>
   <?php
  include '../base.php';
-                            $obj=new Base("localhost","root","global");
-
-                             $result = $obj->consulta("SELECT * FROM galeria_menus where idMenu=".$_POST['id']." order by nombre");
+ include "../host2.php";
+    $obj=new Base("localhost",$DB_user,$DB_name);
+    $result = $obj->consulta("SELECT * FROM galeria_menus where idMenu=".$_POST['id']." order by nombre");
     $numfilas = $result->num_rows;
      for ($x=0;$x<$numfilas;$x++) {
         $fila = $result->fetch_object();

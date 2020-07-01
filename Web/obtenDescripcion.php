@@ -1,7 +1,9 @@
 <?php	
-	include "../Panel/base.php";
+	//include "base.php";
+	include "host.php"
+	include $rootApp."/Panel/base.php";
 	$baseDatos = $_REQUEST['bd'];	
-	$conex=new Base("localhost","ggonzalez","$baseDatos");	
+	$conex=new Base("localhost","root","$baseDatos");	
 	echo json_encode(descripcion($conex));
 	
 	function descripcion($conex){				
