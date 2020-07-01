@@ -1,7 +1,13 @@
 # Código fuente del ECCBIO
 
-## Información relevante acerca de la implementación:
+## Requerimientos mínimos
+- _php-mcrypt_ Se requiere esta extensión para el panel de administración. (https://gist.github.com/kevinski303/88dedbb4734d4518e03556494be84ec7)
+- _texlive-full_ Se requiere este paquete de los repositorios (debian/fedora)
+- _python_ Se requiere python y pyhotn para latex (https://ctan.org/tex-archive/macros/latex/contrib/python)
+- Se requiere una cuenta con billing activado de GoogleCloudPlatform
 
+
+## Información relevante acerca de la implementación (Archivos a modificar antes de inicializar):
 - **jsvars.php** (Definir aquí las siguientes variables, este archivo es incluido en index.php, utilizar jsvars.php.example como base)
 	- home: establecer aquí el nombre de la base de datos MySQL con la que se importaron los datos.
 	- idPais: 1 para México (constante)
@@ -16,7 +22,7 @@
 
 - **Panel/app** (Ruta general del Panel de administración)
 
-- **Panel/app/config/dabase.php** (Info de la base de datos)
+- **Panel/app/config/dabase.php** (Info de la base de datos usar Panel/app/config/dabase.php.example como base)
 
 - **Panel/app/views/admin/login.php** (Establecer la ruta absoluta raiz del panel ej: localhost/eccbio/Panel)
 
