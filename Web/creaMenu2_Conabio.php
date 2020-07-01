@@ -1,11 +1,12 @@
 <?php
-	// ini_set('display_errors', 1);
-	// ini_set('display_startup_errors', 1);
-	// error_reporting(E_ALL);
+	//ini_set('display_errors', 1);
+	//ini_set('display_startup_errors', 1);
+	//error_reporting(E_ALL);
 	include "../Panel/base.php";
 	include "funciones.php";
+
 	$baseDatos = $_REQUEST['bd'];	
-	$conex=new Base("localhost","ggonzalez","$baseDatos");
+	$conex=new Base("localhost","root","$baseDatos");
 	echo capas($conex,$baseDatos);
 	
 	function capas($conex,$parent){
@@ -71,6 +72,12 @@
 					<form onsubmit="return false" oninput="temp'.$fila->id_Capa.'.value = points'.$fila->id_Capa.'.valueAsNumber">
 						<a class= "capaActiva" data-priority="" id="capa'.$fila->id_Capa.'" tabindex="0" onclick="agregarCapa(\'capa'.$fila->id_Capa.'\',\'\',\''.$fila->id_Capa.'\',\''.$clase.'\',\'\','.$fila->prioridad.')">
 							<i class="fas fa-toggle-on" style="margin-right: 3px;"></i>'.$fila->nombre.'</a>
+					<form onsubmit="return false" oninput="temp'.$fila->id_Capa.'.value = points'.$fila->id_Capa.'.valueAsNumber">
+						<a class= "capaActiva" data-priority="" id="capa'.$fila->id_Capa.'" tabindex="0" onclick="agregarCapa(\'capa'.$fila->id_Capa.'\',\'\',\''.$fila->id_Capa.'\',\''.$clase.'\',\'\','.$fila->prioridad.')">
+							<i class="fas fa-toggle-on" style="margin-right: 3px;"></i>'.$fila->nombre.'</a>
+					<form onsubmit="return false" oninput="temp'.$fila->id_Capa.'.value = points'.$fila->id_Capa.'.valueAsNumber">
+						<a class= "capaActiva" data-priority="" id="capa'.$fila->id_Capa.'" tabindex="0" onclick="agregarCapa(\'capa'.$fila->id_Capa.'\',\'\',\''.$fila->id_Capa.'\',\''.$clase.'\',\'\','.$fila->prioridad.')">
+							<i class="fas fa-toggle-on" style="margin-right: 3px;"></i>'.$fila->nombre.'</a>
 						<input id="points'.$fila->id_Capa.'" class="sliderRange" onchange="'.$opacidad.'\'capa'.$fila->id_Capa.'\',\''.$fila->id_Capa.'\',\''.$fila->tipo.'\')" name="points'.$fila->id_Capa.'" type="range" min="0" max="100" default="100" value="100">
 						<output for="points'.$fila->id_Capa.'" default="100" name="temp'.$fila->id_Capa.'">100</output>
 					</form>
@@ -121,3 +128,4 @@
         return $paises.$scriptT;
 	}
 ?>
+

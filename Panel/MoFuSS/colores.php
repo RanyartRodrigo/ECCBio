@@ -3,8 +3,9 @@
 <div class="separador">
   <?php
  include '../base.php';
-                            $obj=new Base("localhost","root","global");
-                             $result = $obj->consulta("SELECT id,color FROM colores");
+ include "../host2.php";
+  $obj=new Base("localhost",$DB_user,$DB_name);
+   $result = $obj->consulta("SELECT id,color FROM colores");
      $numfilas = $result->num_rows;
      echo "<div id='paletaColores' class='hidden'>";
      include 'color.html';

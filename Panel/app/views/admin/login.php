@@ -4,7 +4,7 @@ if (isset($_POST['email'], $_POST['password']) && csrf_filter()) {
 	Auth::login($_POST['email'], $_POST['password'], isset($_POST['remember']));
 
 	if (Auth::passes()) {
-		redirect_to('/admin/Conabio2/');
+		redirect_to('/eccbio/Panel/');
 	}
 }
 ?>

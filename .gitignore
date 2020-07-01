@@ -7,6 +7,8 @@
 jsvars.php
 Panel/base.php
 Panel/host.php
+Panel/host2.php
+Panel/app/config/database.php
 .idea
 
 # Packages #

@@ -1,6 +1,7 @@
 <?php  
 	include "base.php";
-$base=new Base("localhost","root","global");
+	include "host2.php";
+	$base=new Base("localhost",$DB_user,$DB_name);
 if(isset($_GET["parent"])){
         $parent=$_GET["parent"];
 }

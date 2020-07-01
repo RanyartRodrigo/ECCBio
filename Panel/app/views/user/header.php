@@ -64,7 +64,7 @@ function active_menu($items) {
         	<div class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
                 	<li class="<?php echo active_menu('return') ?>">
-                    	<a href="http://www.wegp.unam.mx/conabio"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
+                    	<a href="http://localhost/eccbio/"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
                     </li>
                     
 	            	<li class="<?php echo active_menu('dashboard') ?>">

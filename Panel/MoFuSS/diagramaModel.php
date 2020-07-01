@@ -17,7 +17,8 @@ switch ($_POST['opcion']) {
 function Relaciones(){
 	
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $pais=$_POST["pais"];
 $relaciones=explode("|",$_POST["relaciones"]);
                 $obj->consulta("delete from relaciones where pais=".$pais);
@@ -46,7 +47,8 @@ function Modificar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 //$relacion=split(",",$_POST['relaciones']);
 $obj->consulta("update diagrama set operacion='".$_POST['operacion']."', pais=".$_POST['pais'].", tipo='".$_POST['tipo']."', descripcion='".$_POST['descripcion']."', nombre='".$_POST['nombre']."',idRelacion=0 where id=".$id);
 //$result=$obj->consulta("delete from relaciones where base=".$id );
@@ -69,7 +71,8 @@ function Eliminar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 $obj->consulta("delete from diagrama where id=".$id);
 
  $jsondata = array();
@@ -81,7 +84,8 @@ function Agregar()
 {
 
 include "../base.php";
-$obj=new Base("localhost","root","global");
+include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 //if($_POST['idRelacion']=='null')
         $relacion=0;
 //else

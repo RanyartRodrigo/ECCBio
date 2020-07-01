@@ -50,7 +50,7 @@
         	<div class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
                 	<li>
-                    	<a href="http://www.wegp.unam.mx/conabio"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
+                    	<a href="http://localhost/eccbio/" target="_blank"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
                     </li>
 	            	<li>
       					<a href="comments.php">Comentarios</a>

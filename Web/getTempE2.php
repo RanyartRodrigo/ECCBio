@@ -3,7 +3,7 @@
 	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
         //header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
 	#$baseDatos = $_REQUEST['bd'];
-        $base=new Base("localhost","ggonzalez","conabio3");	
+        $base=new Base("localhost","root","conabio3");	
 	//$temperaturas = $_REQUEST['temperaturas']; 
 	$idPais = 1;//$_REQUEST['idPais'];
 	$idEstado = $_REQUEST['metadata'];

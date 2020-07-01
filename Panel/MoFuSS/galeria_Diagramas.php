@@ -38,12 +38,13 @@
 
 <div class="separador">
 <p class="titleGaleria">Logos Disponibles</p>
-  <?php
+<?php
  include '../base.php';
-                            $obj=new Base("localhost","root","global");
+ include "../host2.php";
+$obj=new Base("localhost",$DB_user,$DB_name);
 
-                             $result = $obj->consulta("SELECT * FROM galeria_diagramas where idDiagrama=".$_POST['id']." order by nombre");
-    $numfilas = $result->num_rows;
+ $result = $obj->consulta("SELECT * FROM galeria_diagramas where idDiagrama=".$_POST['id']." order by nombre");
+$numfilas = $result->num_rows;
      for ($x=0;$x<$numfilas;$x++) {
         $fila = $result->fetch_object();
                 echo '

@@ -1,4 +1,0 @@
-Temperatura mínima
-Anual
-CNRMCM5
-4.5
