@@ -27,3 +27,5 @@
 - **Panel/app/views/admin/login.php** (Establecer la ruta absoluta raiz del panel ej: localhost/eccbio/Panel)
 
 - **Panel/app/config/app.php** (Establecer la ruta relativa raíz del panel ej: ../Panel/)
+
+- **Panel/app/config/session.php** (Establecer la ruta del proyecto ej: http://localhost/eccbio/)
