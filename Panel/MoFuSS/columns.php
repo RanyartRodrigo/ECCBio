@@ -5,7 +5,7 @@
 	if(isset($_POST['id'])){
 		include '../base.php';
 		include '../host2.php';
-		$obj=new Base("localhost",$DB_user,$DB_name);
+		$obj=new Base($DB_server,$DB_user,$DB_name);
 		$result = $obj->consulta( "SELECT * FROM columnas where idColumna=".$_POST['id']);
 		$numfilas = $result->num_rows;
 		$fila = $result->fetch_object();

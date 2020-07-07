@@ -3,7 +3,7 @@ $array = array("mensaje" => "<button>".$_GET["q"]."</button>"); //Por ejemplo
 if(isset($_GET['callback'])){ // Si es una petición cross-domain  
 	include "base.php";
 	include "host2.php"
-	$base=new Base("localhost",$DB_user,$DB_name);
+	$base=new Base($DB_server,$DB_user,$DB_name);
                 		$result =$base->consulta("SELECT * FROM paises");
 		                $numfilas = $result->num_rows;
 		                $paises="";
@@ -18,7 +18,7 @@ else{ // Si es una normal, respondemos de forma normal
 
 	include "base.php";
 	include "host2.php";
-	$base=new Base("localhost",$DB_user,$DB_name);
+	$base=new Base($DB_server,$DB_user,$DB_name);
                 		$result =$base->consulta("SELECT * FROM paises");
 		                $numfilas = $result->num_rows;
 		                $paises="";

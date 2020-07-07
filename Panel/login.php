@@ -1,3 +1,4 @@
 <?php
-header('Location: http://localhost/eccbio/Panel/admin.php');
+include "host.php";
+header('Location: '.$host.'admin.php');
 ?>

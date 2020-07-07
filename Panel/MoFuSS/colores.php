@@ -4,7 +4,7 @@
   <?php
  include '../base.php';
  include "../host2.php";
-  $obj=new Base("localhost",$DB_user,$DB_name);
+  $obj=new Base($DB_server,$DB_user,$DB_name);
    $result = $obj->consulta("SELECT id,color FROM colores");
      $numfilas = $result->num_rows;
      echo "<div id='paletaColores' class='hidden'>";

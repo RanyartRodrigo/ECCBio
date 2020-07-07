@@ -28,29 +28,32 @@
 </div>   
 </div>
 <?php echo View::make('admin.footer')->render() ?>
+<?php include "../../../host.php"; ?>
 <script>
 function datos(id){
     var arr=id.split("-");
-    if(arr[0]=="null")
-    $("#Contenidos").load("http://localhost/panel/MoFuSS/"+arr[1]+".php");
+    if(arr[0]=="null"){
+	$("#Contenidos").load(<?php echo $host; ?>+"MoFuSS/"+arr[1]+".php");
+    }
     else{
-        $("#Lista").load("http://localhost/panel/MoFuSS/Lista.php",{lista:arr[1]},function(){
+	    $("#Lista").load(<?php echo $host; ?>+"MoFuSS/Lista.php",{lista:arr[1]},function(){
+
         $("#"+id).find( "p" ).css({
                 "background": "#52accc",
     "color": "white",
     "border-bottom": "solid 2px white"
         });
     });
-        $("#Contenidos").load("http://localhost/panel/MoFuSS/"+arr[1]+".php",{id:arr[0]});
+	    $("#Contenidos").load(<?php echo $host; ?>+"MoFuSS/"+arr[1]+".php",{id:arr[0]});
     }
 }
 $(document).ready(function(){
-    $("#Contenidos").load("http://localhost/panel/MoFuSS/Alcances.php");
-    $("#Lista").load("http://localhost/panel/MoFuSS/Lista.php",{lista:"Alcances"});
+    $("#Contenidos").load(<?php echo $host; ?>+"MoFuSS/Alcances.php");
+    $("#Lista").load(<?php echo $host; ?>+"MoFuSS/Lista.php",{lista:"Alcances"});
 $("#seccion").on("change", function(){
     var x=$("#seccion").val();
-    $("#Contenidos").load("http://localhost/panel/MoFuSS/"+x+".php");
-    $("#Lista").load("http://localhost/panel/MoFuSS/Lista.php",{lista:x});
+    $("#Contenidos").load(<?php echo $host; ?>+"MoFuSS/"+x+".php");
+    $("#Lista").load(<?php echo $host; ?>+"MoFuSS/Lista.php",{lista:x});
 });    
 });
   function vacio(id){

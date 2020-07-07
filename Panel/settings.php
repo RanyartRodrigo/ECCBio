@@ -3,7 +3,8 @@ require_once 'app/init.php';
 
 if (Auth::guest()) redirect_to(App::url());
 include 'base.php';
-$obj=new Base("localhost","root","global");
+include 'host2.php';
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $page = isset($_GET['p']) ? $_GET['p'] : 'account';
 ?>
 

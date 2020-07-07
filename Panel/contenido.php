@@ -1,6 +1,7 @@
 <?php
 include "base.php";
-$obj=new Base("localhost","root","global");
+include "host2.php";
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $result =$obj->consulta("SELECT color FROM colores");
 $numfilas = $result->num_rows;
 for ($x=0;$x<$numfilas;$x++) {

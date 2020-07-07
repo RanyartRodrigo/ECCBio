@@ -1,7 +1,7 @@
 <?php
  include '../base.php';
  include "../host2.php";
-              $obj=new Base("localhost",$DB_user,$DB_name);
+	$obj=new Base($DB_server,$DB_user,$DB_name);
               $result2 = $obj->consulta("SELECT tipo FROM personas group by tipo");
 
   $numfilas2 = $result2->num_rows;

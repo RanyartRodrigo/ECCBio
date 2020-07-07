@@ -1,9 +1,10 @@
 <?php
 	//include "base.php";
-	include "../Panel/baseAcentos.php";
+	include "../Panel/base.php";
 	header('Content-Type: text/html; charset=UTF-8');
 	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
-	$base=new Base("localhost","root","conabio3");
+	include "../Panel/host2.php";
+    $base=new Base($DB_server,$DB_user,$DB_name);
 
 	
 	$idANP = $_REQUEST['idANP'];

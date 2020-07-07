@@ -2,7 +2,7 @@
 	include '../../../base.php';
 	include '../../../host2.php';
 
- $obj=new Base("localhost",$DB_user,$db_name);
+ $obj=new Base($DB_server,$DB_user,$DB_name);
 if (empty($_GET['id']) || !is_numeric($_GET['id'])) {
 	redirect_to('?page=users');
 }

@@ -4,25 +4,25 @@
 	//error_reporting(E_ALL);
 	include "../Panel/base.php";
 	include "funciones.php";
-
-	$baseDatos = $_REQUEST['bd'];	
-	$conex=new Base("localhost","root","$baseDatos");
+	include "../Panel/host2.php";
+        $conex=new Base($DB_server,$DB_user,$DB_name);
+	$baseDatos = $DB_name;
 	echo capas($conex,$baseDatos);
 	
 	function capas($conex,$parent){
 		$tablaSubmenus = "subMenus2";
 		$idPais=$_REQUEST['idPais'];
-		$cond = " AND s.idPais = $idPais ";
-		if(strcmp($parent,"conabio2")===0 || strcmp($parent,"conabio3")===0){
-			$tablaSubmenus = "subMenus";
-			$cond = "";
-		}
+		//$cond = " AND s.idPais = $idPais ";
+		//if(strcmp($parent,"conabio2")===0 || strcmp($parent,"conabio3")===0){
+		//	$tablaSubmenus = "subMenus";
+		//	$cond = "";
+		//}
 		$paises = '';
 		$scriptT='<script>';
 		$scriptT.="var capasIds=[], unidades=[], leyendas=[];
 			function callbackF(){
 		";
-		$query = "select idSubmenu,nombre,descripcion,idPadreSub from $tablaSubmenus s WHERE idPadreSub $cond IS NULL order by prioridad";		
+		$query = "select idSubmenu,nombre,descripcion,idPadreSub from subMenus s WHERE idPadreSub IS NULL order by prioridad";		
 		$Subsresult =$conex->consulta($query);
 		while($fila = $Subsresult->fetch_object()){
 			$idSub="sub".$fila->idSubmenu;
@@ -36,7 +36,7 @@
 						</ul>
 					</li>';			
 		}
-		$query = "select s.idSubmenu,s.nombre,s.descripcion,s.idPadreSub,s.prioridad from $tablaSubmenus s,$tablaSubmenus p WHERE s.idPadreSub IS NOT NULL AND s.idPadreSub=p.idSubmenu $cond order by p.prioridad, s.prioridad;";		
+		$query = "select s.idSubmenu,s.nombre,s.descripcion,s.idPadreSub,s.prioridad from subMenus s,subMenus p WHERE s.idPadreSub IS NOT NULL AND s.idPadreSub=p.idSubmenu order by p.prioridad, s.prioridad;";		
 		$Subsresult =$conex->consulta($query);
 		while($fila = $Subsresult->fetch_object()){
 			$idSub="sub".$fila->idSubmenu;

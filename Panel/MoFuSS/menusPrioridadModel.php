@@ -4,7 +4,7 @@
 	error_reporting(E_ALL);*/
 	include "../base.php";
 	include '../host2.php';
-	$conex=new Base("localhost",$DB_user,$DB_name);	
+	$conex=new Base($DB_server,$DB_user,$DB_name);
 	$option = $_REQUEST['option'];
 	$idSubmenu = "";
 	switch($option){

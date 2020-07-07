@@ -11,7 +11,7 @@
   include '../base.php';
   include '../host2.php';
 
-  $obj=new Base("localhost",$DB_user,$DB_name);
+  $obj=new Base($DB_server,$DB_user,$DB_name);
   if(isset($_POST['id'])){
     if($_POST['id']!=""){
     $result = $obj->consulta("SELECT * FROM submenus where id=".$_POST['id']);

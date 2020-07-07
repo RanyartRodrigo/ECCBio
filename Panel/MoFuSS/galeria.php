@@ -40,8 +40,8 @@
   <?php
  include '../base.php';
  include "../host2.php";
-      $obj=new Base("localhost",$DB_user,$DB_name);
-      $result = $obj->consulta("SELECT * FROM galeria");
+	$obj=new Base($DB_server,$DB_user,$DB_name);
+	 $result = $obj->consulta("SELECT * FROM galeria");
      $numfilas = $result->num_rows;
      for ($x=0;$x<$numfilas;$x++) {
         $fila = $result->fetch_object();

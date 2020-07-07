@@ -11,8 +11,9 @@
         </div>
 <?php
                 include "../base.php";
-                include "../host.php";
-                $obj=new Base("localhost","root","mofuss_unam");
+		include "../host.php";
+		include "../host2.php";
+                $obj=new Base($DB_server,$DB_user,"mofuss_unam");
 if(isset($_GET['id']))
   $result2 = $obj->consulta( "SELECT titulo FROM modelos where id='".$_GET["id"]."'");
 else

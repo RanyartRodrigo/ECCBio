@@ -1,7 +1,8 @@
 <?php
 	include "base.php";
+	include "host2.php";
 	$baseDatos = $_REQUEST['bd'];
-        $base=new Base("localhost","root","$baseDatos");
+        $base=new Base($DB_server,$DB_user,"$baseDatos");
 	$idPais = $_REQUEST['idPais'];
 	$query = "SELECT categoria, descripcion FROM usoSuelo WHERE idPais =$idPais";
         //echo $query;

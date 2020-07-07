@@ -28,4 +28,6 @@
 
 - **Panel/app/config/app.php** (Establecer la ruta relativa raíz del panel ej: ../Panel/)
 
+- **Panel/assets/js/estilos.js** (Establecer la ruta del panel en la variable "host" ej: http://localhost/eccbio/Panel/)
+
 - **Panel/app/config/session.php** (Establecer la ruta del proyecto ej: http://localhost/eccbio/)

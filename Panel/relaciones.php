@@ -1,6 +1,7 @@
 <?php  
 	include "base.php";
-	$base=new Base("localhost","root","global");
+	include "host2.php";
+	$base=new Base($DB_server,$DB_user,$DB_name);
 	if($_GET['opcion']==0)
 		$res=getRelacion($base);
         if($_GET['opcion']==1)

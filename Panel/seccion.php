@@ -1,6 +1,7 @@
 <?php
-        include "base.php";
-$base=new Base("localhost","root","global");
+include "base.php";
+include "host2.php";
+$base=new Base($DB_server,$DB_user,$DB_name);
 if($_GET["seccion"]=="people")$seccion=people($base);
 if($_GET["seccion"]=="friends")$seccion=friends($base);
                               if(isset($_GET['callback'])){ // Si es una petición cross-domain

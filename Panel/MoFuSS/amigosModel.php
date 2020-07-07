@@ -3,7 +3,7 @@
 
 include "../base.php";
 include "../host2.php";
-$obj=new Base("localhost",$DB_user,$DB_name);
+$obj=new Base($DB_server,$DB_user,$DB_name);
 switch ($_POST['opcion']) {
 	case 0:
 		Eliminar($obj);

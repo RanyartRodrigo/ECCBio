@@ -17,7 +17,7 @@ function Modificar(){
 	$id=$_POST['id'];
 	include "../base.php";
 	include "../host2.php";
-	$obj=new Base("localhost",$DB_user,$DB_name);
+	$obj=new Base($DB_server,$DB_user,$DB_name);
 	$estilos=str_replace("'","\'",$_POST['estilos']);
 	$obj->consulta("update $DB_name.columnas set leyendaStrech='".$_POST['leyendaStrech']."',columna='".$_POST['columna']."', valorFiltro='".$_POST['valorFiltro']."', estilos='".$estilos."' , titulo='".$_POST['titulo']."', tipoMapa={$_POST['tipoMapa']}, tipoValores={$_POST['tipoValores']} where idColumna=".$id);
 	$jsondata = array();
@@ -31,7 +31,7 @@ function Duplicar(){
 	$id=$_POST['id'];
 	include "../base.php";
 	include "../host2.php";
-	$obj=new Base("localhost",$DB_user,$DB_name);
+	$obj=new Base($DB_server,$DB_user,$DB_name);
 	$result=$obj->consulta("select * from $DB_name.columnas where idColumna=".$id);
 	$fila = $result->fetch_object();
 $obj->consulta('insert into $DB_name.columnas (columna, valorFiltro, estilos, titulo,tipoMapa,tipoValores,leyendaStrech) values ("'.$fila->columna.'", "'.$fila->valorFiltro.'", "'.$fila->estilos.'", "'.$fila->titulo.' 2",'.$fila->tipoMapa.','.$fila->tipoValores.',"'.$fila->leyendaStrech.'")');
@@ -48,7 +48,7 @@ function Eliminar(){
 	$id=$_POST['id'];
 	include "../base.php";
 	include "../host2.php";
-	$obj=new Base("localhost",$DB_user,$DB_name);
+	$obj=new Base($DB_server,$DB_user,$DB_name);
 	$obj->consulta("delete from $DB_name.columnas where idColumna=".$id);
 	$jsondata = array();
 	$jsondata["success"] = true;
@@ -58,7 +58,7 @@ function Eliminar(){
 function Agregar(){
 	include "../base.php";
 	include "../host2.php";
-	$obj=new Base("localhost",$DB_user,$DB_name);
+	$obj=new Base($DB_server,$DB_user,$DB_name);
 	$estilos=str_replace("'","\'",$_POST['estilos']);
 	$obj->consulta("insert into columnas (columna, valorFiltro, estilos, titulo,tipoMapa,tipoValores,leyendaStrech) values ('{$_POST['columna']}', '{$_POST['valorFiltro']}', '$estilos', '{$_POST['titulo']}',{$_POST['tipoMapa']},{$_POST['tipoValores']},'{$_POST['leyendaStrech']}')");
 	// $obj->consulta("insert into $DB_name.columnas (columna, valorFiltro, estilos, titulo) values ('".$_POST['columna']."', '".$_POST['valorFiltro']."', '".$estilos."', '".$_POST['titulo']."')");

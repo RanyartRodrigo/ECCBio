@@ -1,7 +1,7 @@
 <?php
 	include "../Panel/base.php";
-	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
-	$base=new Base("localhost","root","conabio3");
+	include "../Panel/host2.php"
+	$base=new Base($DB_server,$DB_user,$DB_name);
 	$idPais = 1;
 	$idMun = $_REQUEST['metadata'];
 	$idVariable = $_REQUEST['variable'];

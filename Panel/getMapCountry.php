@@ -1,7 +1,8 @@
 <?php
 	include "base.php";
+	include "host2.php";
 	$baseDatos = $_REQUEST['bd'];
-	$base=new Base("localhost","root","$baseDatos");
+	$base=new Base($DB_server,$DB_user,"$baseDatos");
 	$url = $_REQUEST['url'];
 	$query = "SELECT latitud, longitud,zoom, maxZoom,usoSuelo,id_Pais FROM paises WHERE nombreURL ='$url'";
 	$res =$base->consulta($query);

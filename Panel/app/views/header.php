@@ -1,4 +1,4 @@
-
+<?php include "../../host.php;" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@
         	<div class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
                 	<li>
-                    	<a href="http://localhost/eccbio/" target="_blank"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
+			<a href=<?php echo $appRoot; ?> target="_blank"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
                     </li>
 	            	<li>
       					<a href="comments.php">Comentarios</a>

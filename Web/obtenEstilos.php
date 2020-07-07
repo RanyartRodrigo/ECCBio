@@ -1,7 +1,8 @@
 <?php
 	include "../Panel/base.php";
+	include "../Panel/host2.php";
 	$baseDatos = $_REQUEST['bd'];	
-	$conex=new Base("localhost","root","$baseDatos");	
+	$conex=new Base($DB_server,$DB_user,"$baseDatos");	
 	echo json_encode(estilosCapa($conex,$_REQUEST["idCapa"]));
 	
 	function estilosCapa($conex,$idCapa){				

@@ -20,7 +20,7 @@ function Modificar()
 	$id=$_POST['id'];
 include "../base.php";
 include "../host2.php";
-$obj=new Base("localhost",$DB_user,$DB_name);
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $obj->consulta("update paises set usoSuelo='".$_POST['usoSuelo']."', nombre='".$_POST['nombre']."', nombreURL='".$_POST['nombreURL']."', latitud='".$_POST['latitud']."', zoom='".$_POST['zoom']."', maxZoom='".$_POST['maxZoom']."', longitud='".$_POST['longitud']."', informacion='".str_replace("'",'"',$_POST['informacion'])."' where id_Pais=".$id);
  $jsondata = array();
  $jsondata["success"] = true;
@@ -35,7 +35,7 @@ function Eliminar()
 
 	$id=$_POST['id'];
 include "../base.php";
-$obj=new Base("localhost",$DB_user,$DB_name);
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $obj->consulta("delete from paises where id_Pais=".$id);
 
  $jsondata = array();
@@ -48,7 +48,7 @@ function Agregar()
 
 include "../base.php";
 include "../host2.php";
-$obj=new Base("localhost",$DB_user,$DB_name);
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $obj->consulta("insert into paises (usoSuelo,nombre, nombreURL,latitud, longitud, informacion, zoom, maxZoom) values ( '".$_POST['usoSuelo']."', '".$_POST['nombre']."', '".$_POST['nombreURL']."', '".$_POST['latitud']."', '".$_POST['longitud']."', '".str_replace("'",'"',$_POST['informacion'])."', '".$_POST['zoom']."', '".$_POST['maxZoom']."')");
 
 $result=$obj->consulta("select id_Pais from paises where usoSuelo='".$_POST['usoSuelo']."' and nombre='".$_POST['nombre']."' and nombreURL='".$_POST['nombreURL']."' and informacion='".$_POST['informacion']."'");
@@ -71,7 +71,7 @@ move_uploaded_file($_FILES['imgBandera']['tmp_name'],
     $target_path); 
      include "../base.php";
      include "../host2.php";
-$obj=new Base("localhost",$DB_user,$DB_name);
+$obj=new Base($DB_server,$DB_user,$DB_name);
 $obj->consulta("update paises set bandera='".$_POST['id'].'.'.pathinfo($_FILES['imgBandera']['name'], PATHINFO_EXTENSION)."' where id_Pais=".$_POST['id']);
 
    }

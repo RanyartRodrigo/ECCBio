@@ -1,4 +1,5 @@
-<?php 
+<?php
+include "../../../host.php";
 function active_menu($items) { 
 	return in_array(@$_GET['page'], explode('|', $items))?'active':'';
 }
@@ -64,7 +65,7 @@ function active_menu($items) {
         	<div class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
                 	<li class="<?php echo active_menu('return') ?>">
-                    	<a href="http://localhost/eccbio/"><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
+			<a href=<?php echo $appRoot; ?>><span class="glyphicon glyphicon-hand-left"></span> Sitio Web CONABIO</a>
                     </li>
                     
 	            	<li class="<?php echo active_menu('dashboard') ?>">

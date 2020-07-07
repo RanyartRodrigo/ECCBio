@@ -1,9 +1,10 @@
 <?php
 	include "../Panel/base.php";
-	header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
         //header('Access-Control-Allow-Origin: http://www.wegp.unam.mx',false); 
 	#$baseDatos = $_REQUEST['bd'];
-        $base=new Base("localhost","root","conabio3");	
+	include "../Panel/host2.php";
+        $base=new Base($DB_server,$DB_user,$DB_name);
+
 	//$temperaturas = $_REQUEST['temperaturas']; 
 	$idPais = 1;//$_REQUEST['idPais'];
 	$idEstado = $_REQUEST['metadata'];

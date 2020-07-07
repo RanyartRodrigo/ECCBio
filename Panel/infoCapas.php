@@ -1,6 +1,7 @@
 <?php  
-	include "base.php";
-$base=new Base("localhost","root","global");
+include "base.php";
+include "host2.php";
+$base=new Base($DB_server,$DB_user,$DB_name);
 if($_GET['t']=="img")
                                 $paises=img($base);
 else

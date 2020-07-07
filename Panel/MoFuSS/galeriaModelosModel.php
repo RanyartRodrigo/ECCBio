@@ -15,8 +15,9 @@ switch(intval($opc)){
 function Eliminar()
 {
 	$img=$_POST['id'];
-include "../base.php";
-$obj=new Base("localhost","root","mofuss_unam");
+	include "../base.php";
+	include "../host2.php";
+$obj=new Base($DB_server,$DB_user,"mofuss_unam");
 $obj->consulta("delete from galeria_modelos  where nombre='".$img."'");
      $target_path = "../uploads/galeria_modelos/";
 $target_path = $target_path . $_POST['id']; 
@@ -28,8 +29,9 @@ $target_path = $target_path . $_POST['id'];
 }
 function Agregar()
 {
-include "../base.php";
-$obj=new Base("localhost","root","mofuss_unam");
+	include "../base.php";
+	include "../host2.php";
+$obj=new Base($DB_server,$DB_user,"mofuss_unam");
 $obj->consulta("insert into galeria_modelos (nombre, modelo) values ('nuevo','".$_POST['modelo']."')");
      $result = $obj->consulta("select id from galeria_modelos where nombre='nuevo'");
      for ($x=0;$x<1;$x++) {
@@ -49,7 +51,8 @@ $target_path = $target_path . $_POST['id'].'.'.pathinfo($_FILES['imgGaleria']['n
 move_uploaded_file($_FILES['imgGaleria']['tmp_name'], 
     $target_path); 
 include "../base.php";
-$obj=new Base("localhost","root","mofuss_unam");
+include "../host2.php";
+$obj=new Base($DB_server,$DB_user,"mofuss_unam");
 $obj->consulta("update galeria_modelos set nombre='".$_POST['id'].'.'.pathinfo($_FILES['imgGaleria']['name'], PATHINFO_EXTENSION)."' where id=".$_POST['id']);
 
    }
