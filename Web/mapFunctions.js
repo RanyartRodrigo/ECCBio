@@ -693,9 +693,8 @@ function totalRows(data,params){
 
 function getMap(mapid, prioridad){	
 	$.getJSON(
-		'https://servicios.conabio.gob.mx/assets_conabio8080/getmapdata',
-		//wegpBaseURL+'/getmapdata',
-		 {'mapid':mapid,'bd':home},
+		//wegpBaseURL+'/getmapdata', {'mapid':mapid,'bd':home},
+		'https://www.wegp.unam.mx/getmapdata', {'mapid':mapid,'bd':home},
 		function(data) {
 			added = 0;
 			lastType = "";
@@ -1243,7 +1242,7 @@ function isEntMarked(cveEnt){
 function isMunMarked(cveMun){
         var index = cveMunMarked.indexOf(cveMun);
         var textBoton = index>-1?"Marcar Municipio":"Desmarcar Municipio";
-        //console.log("inside is ent marked! "+textBoton);
+        console.log("inside is ent marked! "+textBoton);
         $("#markMun"+cveMun).html(textBoton);
         return index;
 }
@@ -1413,7 +1412,7 @@ function loadMap(){
 		form_data.append('file', file_data);
 		$("#file").val("");
 		$.ajax({
-			url: 'Web/uploadKML.php',
+			url: 'http://www.mofuss.unam.mx/Mapps/uploads/uploadKML.php',
 			dataType: 'text',  
 			cache: false,
 			contentType: false,
@@ -1669,6 +1668,18 @@ function addLayerOper(i){
 	return pos;          
 }
 
+function addLayer(i,style){	
+	var eeMapOptions = new ee.layers.ImageOverlay(buildGetTileUrl(mapid_[i], token_[i]));
+	//var overlay = map.overlayMapTypes.push(eeMapOptions);
+	var pos = map.overlayMapTypes.push(eeMapOptions) - 1;
+	if(zoom != zoom_[i]){  
+		map.setCenter(latlng_[i]);
+		map.setZoom(zoom_[i]);
+	}
+	return pos;
+}
+
+/*
 function addLayer(i,style){
   printLog(map.getBounds());
   var eeMapOptions = {
@@ -1686,14 +1697,23 @@ function addLayer(i,style){
   }
   return pos;          
 }
+*/
 
-function buildGetTileUrl(mapid, token) {
+/*function buildGetTileUrl(mapid, token) {
   return function(tile, zoom) {
 		var baseUrl = 'https://earthengine.googleapis.com/map';
     var url = [baseUrl, mapid, zoom, tile.x, tile.y].join('/');
     url += '?token=' + token;
     return url;
 	};
+}*/
+
+function buildGetTileUrl(mapid, token) {
+	return new ee.layers.EarthEngineTileSource({
+		mapid,
+		token,
+		formatTileUrl: (x, y, z) => `${EE_MAP_PATH}/${mapid}/tiles/${z}/${x}/${y}`
+	});
 }
 
 function opacidad(element){

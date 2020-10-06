@@ -407,8 +407,8 @@ function envia(t,anp,p,temporada,forzamiento,modelo,flag){
 	}
 	varMeta = (p!==3)?anp:'Poligono';
 	ANPS = anp+"";
-	//var url = (p==3)?'http://www.wegp.unam.mx:8080/getclimatedata':(p==1)?'Web/getTempE2.php':'Web/getTemp2.php';
-	var url = (p==3)?'https://servicios.conabio.gob.mx/assets_conabio8080/getclimatedata':(p==1)?'Web/getTempE2.php':'Web/getTemp2.php';	
+	var url = (p==3)?'https://www.wegp.unam.mx/getclimatedata':(p==1)?'/assets_conabio2/getTempE2.php':'/assets_conabio2/getTemp2.php';
+	//var url = (p==3)?'https://servicios.conabio.gob.mx/assets_conabio8080/getclimatedata':(p==1)?'Web/getTempE2.php':'Web/getTemp2.php';	
 	if(p == 5){
 		var url = 'Web/getTempMun.php';
 	}
@@ -2639,8 +2639,7 @@ function exportaDatos(i){
 	
 	if(type == 0){
 		setTimeout(function(){$.ajax({
-			//url: '/admin/Conabio2/reportesPDF/creaPDF_Latex.php',
-			url: 'Web/reportesPDF/creaPDF_Latex.php',
+			url: 'https://www.wegp.unam.mx/assets_conabio2/reportesPDF/creaPDF_Latex.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2, prec: precc, tmax: tmax,
 					tmin: tmin, type: type, idTitulos: idTitulos, fecha: fecha, 
@@ -2667,8 +2666,7 @@ function exportaDatos(i){
 	}
 	else if(type == 1){
 		setTimeout(function(){$.ajax({
-			//url: '/admin/Conabio2/reportesPDF/creaPDF_LatexEnt.php',
-			url: 'Web/reportesPDF/creaPDF_LatexEnt.php',
+			url: 'https://www.wegp.unam.mx/assets_conabio2/reportesPDF/creaPDF_LatexEnt.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2, prec: precc, tmax: tmax,
 					tmin: tmin, type: type, idTitulos: idTitulos, fecha: fecha, 
@@ -2690,8 +2688,7 @@ function exportaDatos(i){
 	}
 	else if(type == 5){
 		setTimeout(function(){$.ajax({
-			//url: '/admin/Conabio2/reportesPDF/creaPDF_LatexMun.php',
-			url: 'Web/reportesPDF/creaPDF_LatexMun.php',
+			url: 'https://www.wegp.unam.mx/assets_conabio2/reportesPDF/creaPDF_LatexMun.php',
 			type: 'POST',
 			data: {img: imgs,imgN: imgsN, titulos: t, max: t1, min: t2,
 					type: type, idTitulos: idTitulos, fecha: fecha, 
