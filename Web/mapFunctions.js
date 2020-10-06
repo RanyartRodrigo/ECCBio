@@ -1669,32 +1669,24 @@ function addLayerOper(i){
 	return pos;          
 }
 
-function addLayer(i,style){
-  printLog(map.getBounds());
-  var eeMapOptions = {
-    getTileUrl: buildGetTileUrl(mapid_[i], token_[i]),
-    tileSize: new google.maps.Size(256, 256)
-  };
-  var overlay = new google.maps.ImageMapType(eeMapOptions);
-  var pos = prioridadBase-$("#capa"+i).attr("data-priority");
-  map.overlayMapTypes.setAt(pos,overlay);
-  //var pos = map.overlayMapTypes.push(overlay) - 1;
-  console.log("Add layer ",countryZoom, zoom_[i],pos);
-  if(countryZoom != zoom_[i]){  
-  	map.setCenter(latlng_[i]);
-	map.setZoom(zoom_[i]);
-  }
-  return pos;          
+function addLayer(i,style){	
+	var eeMapOptions = new ee.layers.ImageOverlay(buildGetTileUrl(mapid_[i], token_[i]));
+	//var overlay = map.overlayMapTypes.push(eeMapOptions);
+	var pos = map.overlayMapTypes.push(eeMapOptions) - 1;
+	if(zoom != zoom_[i]){  
+		map.setCenter(latlng_[i]);
+		map.setZoom(zoom_[i]);
+	}
+	return pos;
+}
+function buildGetTileUrl(mapid, token) {
+	return new ee.layers.EarthEngineTileSource({
+		mapid,
+		token,
+		formatTileUrl: (x, y, z) => `${EE_MAP_PATH}/${mapid}/tiles/${z}/${x}/${y}`
+	});
 }
 
-function buildGetTileUrl(mapid, token) {
-  return function(tile, zoom) {
-		var baseUrl = 'https://earthengine.googleapis.com/map';
-    var url = [baseUrl, mapid, zoom, tile.x, tile.y].join('/');
-    url += '?token=' + token;
-    return url;
-	};
-}
 
 function opacidad(element){
 	var target = event.target;
